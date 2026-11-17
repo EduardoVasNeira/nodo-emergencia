@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nodo de emergencia</title>
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<a class="saltar" href="#q">Ir al buscador</a>
+<div class="envoltura">
+	<header class="top">
+		<h1>Nodo de emergencia</h1>
+		<span class="lugar" id="lugar"></span>
+	</header>
+	<p class="estado-red"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-wifi-off"/></svg>
+		Funciona sin internet: todo está guardado en este equipo.</p>
+
+	<nav class="fonos inicio" id="fonos" aria-label="Llamar a emergencias"></nav>
+	<p class="mas-fonos"><a href="/emergencia">Más números de emergencia</a></p>
+
+	<form class="busca" action="/buscar" role="search">
+		<label for="q">¿Qué te pasa o qué necesitas saber?</label>
+		<div class="fila">
+			<div class="campo">
+				<svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-search"/></svg>
+				<input id="q" name="q" type="search" placeholder="Escríbelo con tus palabras" autocomplete="off" required>
+			</div>
+			<button type="submit">Buscar</button>
+		</div>
+		<p class="ejemplos">Por ejemplo: <a href="/buscar?q=me+pic%C3%B3+una+ara%C3%B1a">me picó una araña</a>,
+			<a href="/buscar?q=se+cort%C3%B3+y+sangra+mucho">se cortó y sangra mucho</a>,
+			<a href="/buscar?q=alerta+de+tsunami">alerta de tsunami</a>.</p>
+	</form>
+
+	<div class="grilla" id="grilla">
+		<a class="tarjeta urgente" href="/emergencia">
+			<span class="marca"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-siren"/></svg></span>
+			<h2>Emergencia</h2>
+			<p>Teléfonos y qué hacer en sismo, tsunami, incendio o corte de luz.</p>
+		</a>
+		<a class="tarjeta" href="/ficha">
+			<span class="marca"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-heart-pulse"/></svg></span>
+			<h2>Primeros auxilios</h2>
+			<p>Qué hacer paso a paso: heridas, quemaduras, picaduras, desmayos, atragantamiento.</p>
+		</a>
+		<a class="tarjeta" href="/mapa">
+			<span class="marca"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-map"/></svg></span>
+			<h2>Mapa sin internet</h2>
+			<p id="txt-mapa">Calles de tu zona, hospitales, bomberos y albergues.</p>
+		</a>
+		<a class="tarjeta" href="/documentos">
+			<span class="marca"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-file-text"/></svg></span>
+			<h2>Documentos oficiales</h2>
+			<p>Planos de evacuación y guías de las autoridades.</p>
+		</a>
+		<a class="tarjeta" href="/wiki/">
+			<span class="marca"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-library"/></svg></span>
+			<h2>Biblioteca</h2>
+			<p>Wikipedia, medicina, manuales y diccionario.</p>
+		</a>
+	</div>
+
+	<footer>
+		<a href="/cartel"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-printer"/></svg>Imprimir cartel con QR para dejarlo junto a la puerta o el router</a>
+		<span>Mapas © OpenStreetMap y Protomaps · Contenido de Kiwix y Wikimedia.</span>
+	</footer>
+</div>
+<script>
+function nodoFono(t) {
+	const a = document.createElement("a");
+	a.className = "fono"; a.href = "tel:" + t.numero.replace(/\s/g, "");
+	a.innerHTML = '<svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-phone"/></svg><div><b></b><span></span></div>';
+	a.querySelector("b").textContent = t.numero;
+	a.querySelector("span").textContent = t.nombre.replace(/\s*\(.*\)$/, "");
+	return a;
+}
+fetch("/config.json").then(r => r.json()).catch(() => ({})).then(c => {
+	if (c.lugar) {
+		document.getElementById("lugar").textContent = c.lugar + ", " + c.pais_nombre;
+		document.getElementById("txt-mapa").textContent =
+			"Calles a " + c.radio_km + " km de " + c.lugar + ", hospitales, bomberos y albergues.";
+	}
+	return fetch("/paises/" + encodeURIComponent(c.pais || "CL") + ".json").then(r => r.json());
+}).then(p => {
+	document.getElementById("fonos").replaceChildren(...(p.telefonos || []).slice(0, 3).map(nodoFono));
+}).catch(() => {});
+
+// Tarjetas de extras locales (local/tarjetas.json): [{titulo, texto, icono, url | puerto}].
+// "puerto" arma el enlace con el mismo nombre con que se abrió el portal (sirve en casa y en la Wi-Fi).
+fetch("/tarjetas-locales.json").then(r => r.ok ? r.json() : []).then(lista => {
+	const grilla = document.getElementById("grilla");
+	for (const t of Array.isArray(lista) ? lista : []) {
+		const a = document.createElement("a");
+		a.className = "tarjeta";
+		a.href = t.puerto ? location.protocol + "//" + location.hostname + ":" + Number(t.puerto) + "/" : (t.url || "#");
+		a.innerHTML = '<span class="marca"><svg class="icono-svg" aria-hidden="true"><use/></svg></span><h2></h2><p></p>';
+		a.querySelector("use").setAttribute("href", "/iconos.svg#i-" + String(t.icono || "library").replace(/[^a-z-]/g, ""));
+		a.querySelector("h2").textContent = t.titulo || "";
+		a.querySelector("p").textContent = t.texto || "";
+		grilla.appendChild(a);
+	}
+}).catch(() => {});
+</script>
+</body>
+</html>

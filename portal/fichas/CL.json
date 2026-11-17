@@ -1,0 +1,1966 @@
+{
+ "fichas": [
+  {
+   "id": "arana-de-rincon",
+   "titulo": "Picadura de araña de rincón",
+   "tambien": [
+    "me picó una araña",
+    "araña de rincón",
+    "loxosceles",
+    "mancha morada que duele",
+    "picadura de araña en la casa",
+    "araña café de patas largas",
+    "me mordió una araña durmiendo"
+   ],
+   "urgente_si": [
+    "La mancha se pone morada o con borde azul-grisáceo y crece",
+    "Fiebre, náuseas, vómitos o mucha sudoración",
+    "Orina oscura o piel y ojos amarillos (vigilar las primeras 24 a 48 horas)"
+   ],
+   "pasos": [
+    "Mantén la calma.",
+    "Lava la zona con agua y jabón.",
+    "Aplica frío en la zona (hielo envuelto en un paño, nunca directo en la piel) y deja la parte picada en reposo y en alto.",
+    "Si puedes, guarda la araña en un frasco con tapa (si está viva, con un algodón mojado; si está muerta, en frasco seco) o sácale una foto.",
+    "Ve al servicio de urgencia más cercano, idealmente dentro de las primeras 24 horas, y lleva la araña.",
+    "Vigila los síntomas durante las primeras 24 a 48 horas."
+   ],
+   "no_hacer": [
+    "No succiones la picadura.",
+    "No pongas torniquete.",
+    "No aprietes la herida ni la hagas sangrar.",
+    "No pises ni aplastes la araña: cuesta identificarla después."
+   ],
+   "llamar": "Urgencia o 131 (SAMU); dudas: CITUC +56 2 2635 3800",
+   "nota": "Según la guía MINSAL 2016, el suero antiloxosceles no está recomendado; el tratamiento lo decide el equipo de salud. Ninguna fuente chilena leída desaconseja el frío: IST indica 'frío local' y la guía MINSAL usa hielo local en el tratamiento de la lesión.",
+   "fuentes": [
+    {
+     "nombre": "MINSAL - Guía para el Manejo de Mordedura de Araña de los Rincones (2016), publicada en sitio CITUC",
+     "url": "https://cituc.uc.cl/wp-content/uploads/2022/09/PROTOCOLO-LOXOSCELES-MINSAL-2016.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "IST - ¿Qué hacer ante una mordida de araña de rincón?",
+     "url": "https://ist.cl/wp-content/uploads/2025/01/que-hacer-ante-mordida-arana-rincon.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "viuda-negra",
+   "titulo": "Picadura de viuda negra o araña del trigo",
+   "tambien": [
+    "araña del trigo",
+    "viuda negra",
+    "araña de poto colorado",
+    "latrodectus",
+    "araña negra con mancha roja",
+    "calambres después de picadura de araña",
+    "picadura de araña en el campo"
+   ],
+   "urgente_si": [
+    "Dolor fuerte que se extiende al pecho, la espalda o la guata",
+    "Calambres o espasmos musculares",
+    "Mucha sudoración, náuseas o vómitos",
+    "Dificultad para respirar o presión alta",
+    "Embarazada con contracciones"
+   ],
+   "pasos": [
+    "Busca atención de urgencia de inmediato: la picadura es muy tóxica.",
+    "Lava la zona con agua y jabón.",
+    "Pon hielo envuelto en un paño limpio: 10 minutos sí, 10 minutos no, y repite.",
+    "Mantén quieta la parte picada; si es en brazo o pierna, puedes usar una tablilla casera.",
+    "Suelta la ropa y saca anillos y joyas apretadas.",
+    "Llama al CITUC para recibir orientación."
+   ],
+   "no_hacer": [
+    "No pongas torniquete.",
+    "No esperes a que el dolor pase solo: puede confundirse con un infarto o con dolor de guata grave."
+   ],
+   "llamar": "131 (SAMU); orientación: CITUC +56 2 2635 3800",
+   "nota": "No encontramos una ficha oficial chilena (MINSAL/CITUC) de primeros auxilios para esta araña; los pasos vienen de MedlinePlus (EE.UU.). Según ARS Medica (UC), en Chile la mordedura suele ocurrir en faenas agrícolas y el tratamiento médico es principalmente para el dolor.",
+   "fuentes": [
+    {
+     "nombre": "MedlinePlus en español - Araña viuda negra",
+     "url": "https://medlineplus.gov/spanish/ency/article/002858.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "ARS Medica (Pontificia Universidad Católica de Chile) - Latrodectismo: caso clínico y revisión",
+     "url": "https://arsmedica.cl/index.php/MED/article/download/1003/904/3792",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "abeja-avispa",
+   "titulo": "Picadura de abeja o avispa",
+   "tambien": [
+    "me picó una abeja",
+    "picadura de avispa",
+    "chaqueta amarilla",
+    "aguijón",
+    "se le hinchó por una picadura",
+    "alergia a la abeja",
+    "picadura de insecto"
+   ],
+   "urgente_si": [
+    "Dificultad para respirar o para tragar",
+    "Hinchazón de boca, labios, lengua o cara",
+    "Enrojecimiento o ronchas en todo el cuerpo",
+    "Dolor en el pecho, debilidad o mareo",
+    "Persona con alergia grave conocida a picaduras"
+   ],
+   "pasos": [
+    "Aléjate del lugar donde están los insectos.",
+    "Si el aguijón se ve, sácalo raspando con el borde de una tarjeta u objeto recto.",
+    "Lava la zona con agua y jabón.",
+    "Pon hielo envuelto en un paño: 10 minutos sí, 10 minutos no.",
+    "Saca anillos y joyas si la zona se está hinchando.",
+    "Si la persona tiene su medicamento de emergencia para alergias (autoinyector), ayúdala a usarlo.",
+    "Marca o fotografía la picadura para ver cómo evoluciona."
+   ],
+   "no_hacer": [
+    "No saques el aguijón con pinzas ni con las uñas: aprietan el saco de veneno.",
+    "No pongas torniquete."
+   ],
+   "llamar": "131 (SAMU) si hay señales de alergia grave",
+   "nota": "Crece Contigo indica quitar el aguijón con pinza; el manual UC 2025 (Chile) y MedlinePlus indican rasparlo y no usar pinzas. Se usó la indicación UC, más reciente y coincidente con MedlinePlus.",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (mordeduras y picaduras)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Mordeduras y picaduras de insectos",
+     "url": "https://medlineplus.gov/spanish/ency/article/000033.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "anafilaxia",
+   "titulo": "Reacción alérgica grave (anafilaxia)",
+   "tambien": [
+    "reacción alérgica grave",
+    "shock anafiláctico",
+    "se le hinchó la cara",
+    "no puede respirar por alergia",
+    "alergia a una comida o remedio",
+    "ronchas y falta de aire",
+    "se le cierra la garganta"
+   ],
+   "urgente_si": [
+    "Siempre es una emergencia: llamar al 131",
+    "Dificultad para respirar, tos o silbido al respirar",
+    "Hinchazón de cara, ojos, labios o lengua",
+    "Opresión en el pecho o palpitaciones",
+    "Desmayo o pérdida del conocimiento"
+   ],
+   "pasos": [
+    "Llama de inmediato al 131.",
+    "Si la persona tiene su medicamento de emergencia (por ejemplo un autoinyector), ayúdala a usarlo.",
+    "Si le cuesta respirar, déjala sentada con los hombros hacia atrás.",
+    "Si está pálida o mareada, acuéstala, levántale los pies y abrígala con una manta.",
+    "Suelta la ropa apretada.",
+    "Vigila su respiración; si deja de responder y no respira, inicia RCP."
+   ],
+   "no_hacer": [
+    "No esperes a ver si mejora: pide ayuda de inmediato.",
+    "No le des comida ni bebida."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de dificultad respiratoria",
+     "url": "https://medlineplus.gov/spanish/ency/article/000007.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - Anafilaxia",
+     "url": "https://medlineplus.gov/spanish/ency/article/000844.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "mordedura-perro-gato",
+   "titulo": "Mordedura de perro, gato u otro animal",
+   "tambien": [
+    "me mordió un perro",
+    "mordedura de gato",
+    "rasguño de gato",
+    "mordida de animal",
+    "perro callejero me mordió",
+    "murciélago en la casa",
+    "rabia"
+   ],
+   "urgente_si": [
+    "Sangra mucho",
+    "La herida es grande, profunda o está en la cara",
+    "Animal desconocido, callejero o silvestre, o contacto con un murciélago",
+    "Signos de infección: más dolor, enrojecimiento, hinchazón, pus o fiebre"
+   ],
+   "pasos": [
+    "Aléjate del animal y asegúrate de que nadie más corra peligro.",
+    "Lava la herida con abundante agua corriente y jabón durante al menos 10 minutos (si no hay jabón, solo con mucha agua).",
+    "Si sangra, presiona con un paño limpio y seco.",
+    "Cubre la herida con una gasa o paño limpio.",
+    "Ve lo antes posible a un centro de salud: pueden indicar vacuna antirrábica y antitetánica.",
+    "Anota dónde vive el animal y los datos de su dueño para informarlos en el centro de salud.",
+    "Si el animal es conocido, obsérvalo: agresividad, mucha saliva o espuma, o que se esconda de la luz pueden ser señales de rabia."
+   ],
+   "no_hacer": [
+    "No toques murciélagos con las manos: avisa al municipio para que lo retiren.",
+    "No dejes sin lavar ni sin consultar una mordedura que rompió la piel."
+   ],
+   "llamar": "Urgencia o 131 si sangra mucho; dudas: Salud Responde 600 360 7777",
+   "nota": "En Chile la rabia se asocia principalmente al murciélago (UC). La vacuna la decide el centro de salud; el tratamiento antirrábico es gratuito en el sector público (MINSAL).",
+   "fuentes": [
+    {
+     "nombre": "IST - Prevención de mordeduras (tratamiento frente a una mordedura)",
+     "url": "https://ist.cl/wp-content/uploads/2023/08/Prevencion-de-Mordeduras.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (mordeduras)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MINSAL - Campaña de verano: araña de rincón y murciélagos (2025)",
+     "url": "https://www.minsal.cl/?p=99329",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "mordedura-culebra",
+   "titulo": "Mordedura de culebra o serpiente",
+   "tambien": [
+    "me mordió una culebra",
+    "mordedura de serpiente",
+    "culebra de cola larga",
+    "culebra de cola corta",
+    "víbora",
+    "me picó una culebra en el campo"
+   ],
+   "urgente_si": [
+    "La zona mordida se hincha o cambia de color",
+    "Palidez, mareo o la persona se siente muy mal"
+   ],
+   "pasos": [
+    "Mantén a la persona tranquila y quieta.",
+    "Saca anillos, reloj y ropa apretada antes de que se hinche.",
+    "Mantén la zona mordida quieta (tablilla o cabestrillo sin apretar) y a la altura del corazón.",
+    "Si es seguro, saca una foto de la culebra desde lejos o anota su color y tamaño.",
+    "Ve a urgencia de inmediato, sin esperar a que aparezcan síntomas.",
+    "Si se pone pálida o mareada, acuéstala y levántale los pies unos 30 cm."
+   ],
+   "no_hacer": [
+    "No pongas torniquete.",
+    "No pongas hielo ni compresas frías.",
+    "No cortes la herida ni chupes el veneno.",
+    "No intentes atrapar la culebra.",
+    "No le des nada por la boca, ni remedios para el dolor sin indicación médica."
+   ],
+   "llamar": "131 (SAMU); orientación: CITUC +56 2 2635 3800",
+   "nota": "En Chile solo hay culebras (cola larga y cola corta); hay casos documentados de personas con síntomas de envenenamiento tras su mordedura (Boletín del Museo Nacional de Historia Natural, artículo antiguo). No encontramos ficha oficial chilena de primeros auxilios; los pasos son de MedlinePlus (EE.UU.). El SAG pide observar la fauna silvestre a distancia, sin molestarla.",
+   "fuentes": [
+    {
+     "nombre": "MedlinePlus en español - Mordeduras de serpientes",
+     "url": "https://medlineplus.gov/spanish/ency/article/000031.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "Boletín del Museo Nacional de Historia Natural - artículo sobre culebras chilenas",
+     "url": "https://boletinmnhn.cl/index.php/ojs/article/download/699/737/1167",
+     "pais": "CL"
+    },
+    {
+     "nombre": "SAG - Ficha culebra de cola corta",
+     "url": "https://www.sag.gob.cl/sites/default/files/culebra_cola_corta.pdf",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "quemadura",
+   "titulo": "Quemadura por agua hirviendo, aceite o fuego",
+   "tambien": [
+    "me quemé",
+    "quemadura con agua hirviendo",
+    "quemadura con aceite",
+    "se quemó con la tetera",
+    "se le prendió la ropa",
+    "ampollas por quemadura",
+    "quemadura con la estufa"
+   ],
+   "urgente_si": [
+    "La quemadura es más grande que tres manos de la persona",
+    "Está en cara, cuello, manos, pies, genitales o pliegues (codos, rodillas)",
+    "Piel blanca, negra o acartonada, o sin dolor",
+    "Respiró humo, tiene tos, voz ronca o le cuesta respirar",
+    "Es un niño pequeño o un adulto mayor"
+   ],
+   "pasos": [
+    "Aleja a la persona de lo que la quemó. Si se le prende la ropa: que se detenga, se tire al suelo y ruede, o cúbrela con una manta gruesa.",
+    "Si la quemadura es más chica que tres manos: enfríala con agua fría de la llave durante 20 minutos seguidos.",
+    "Si no hay agua corriente, usa paños limpios mojados y cámbialos hasta completar los 20 minutos.",
+    "Saca anillos, pulseras y la ropa de la zona, solo si no está pegada a la piel.",
+    "Cubre la quemadura con un paño limpio y seco, sin apretar.",
+    "Si es grande o grave, ve de inmediato a urgencia o llama al 131, sin aplicar tratamientos caseros."
+   ],
+   "no_hacer": [
+    "No pongas cremas, pasta de dientes, mantequilla, aceite, hierbas ni remedios caseros.",
+    "No revientes las ampollas.",
+    "No saques la ropa que está pegada a la piel.",
+    "No uses hielo.",
+    "No sumerjas en agua fría una quemadura grande y grave (puede causar shock)."
+   ],
+   "llamar": "131 (SAMU); orientación COANIQUEM +56 9 3431 9987 (24 horas)",
+   "nota": "Tiempo de enfriado: COANIQUEM (Chile) indica 20 minutos; el manual UC 2025 dice 'al menos 5 minutos' y MedlinePlus '5 a 30 minutos'. Se usó COANIQUEM. Las indicaciones de COANIQUEM se leyeron en una nota de 24horas.cl que las cita textualmente.",
+   "fuentes": [
+    {
+     "nombre": "COANIQUEM, citado por 24horas.cl - Qué hacer ante quemaduras",
+     "url": "https://www.24horas.cl/te-sirve/coaniquem-que-hacer-quemaduras-incendio",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (quemaduras)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Quemaduras",
+     "url": "https://medlineplus.gov/spanish/ency/article/000030.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "quemadura-quimica",
+   "titulo": "Quemadura química (cloro, ácido, soda cáustica) y químicos en los ojos",
+   "tambien": [
+    "me cayó cloro en la piel",
+    "quemadura con ácido",
+    "soda cáustica",
+    "me saltó un químico al ojo",
+    "quemadura con producto de limpieza",
+    "me cayó lavaloza en el ojo"
+   ],
+   "urgente_si": [
+    "El químico cayó en los ojos",
+    "Dificultad para respirar, convulsiones o inconsciencia",
+    "Quemadura con ampollas, grande o piel destruida"
+   ],
+   "pasos": [
+    "Protégete: usa guantes si tienes y evita tocar el químico.",
+    "Si el químico es un polvo seco, sacúdelo primero con cuidado, sin que vaya a los ojos.",
+    "Saca la ropa y las joyas contaminadas.",
+    "Lava la piel con abundante agua de la llave por lo menos 15 minutos.",
+    "Si cayó en un ojo: mantenlo abierto y lávalo con agua de la llave por lo menos 15 minutos, sin que el agua pase al otro ojo, y busca atención médica.",
+    "Cubre la zona con un paño limpio y seco.",
+    "Llama al CITUC para saber qué hacer según el producto."
+   ],
+   "no_hacer": [
+    "No pongas ungüentos ni remedios caseros.",
+    "No intentes 'neutralizar' el químico con otro producto sin consultar al CITUC.",
+    "No revientes ampollas ni saques piel muerta.",
+    "No te contamines mientras ayudas."
+   ],
+   "llamar": "CITUC +56 2 2635 3800 (emergencias químicas: +56 2 2247 3600); grave: 131",
+   "nota": "Lavado de ojos: Crece Contigo indica al menos 10 minutos y MedlinePlus al menos 15; se indicó 15 para cumplir ambos. MedlinePlus advierte excepciones (cal viva y algunos metales): ante duda, consultar al CITUC.",
+   "fuentes": [
+    {
+     "nombre": "MedlinePlus en español - Quemadura o reacción ocasionada por químicos",
+     "url": "https://medlineplus.gov/spanish/ency/article/000059.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (productos químicos en los ojos)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "CITUC - Centro de Información Toxicológica UC (teléfonos)",
+     "url": "https://cituc.uc.cl/",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "electrocucion",
+   "titulo": "Quemadura eléctrica o electrocución",
+   "tambien": [
+    "le dio la corriente",
+    "electrocutado",
+    "quemadura eléctrica",
+    "tocó un cable",
+    "cable cortado en la calle",
+    "le cayó un rayo",
+    "niño metió algo al enchufe"
+   ],
+   "urgente_si": [
+    "Siempre que haya una quemadura eléctrica: llamar al 131",
+    "No responde o no respira",
+    "Dolor de pecho, latidos irregulares, convulsiones o confusión"
+   ],
+   "pasos": [
+    "No toques a la persona si sigue en contacto con la corriente.",
+    "Si es seguro, corta la luz en el tablero o automático (apagar el aparato no basta).",
+    "Si no puedes cortarla, sepárala con un objeto seco que no conduzca (palo de escoba de madera, silla de madera, goma), parado sobre algo seco.",
+    "Llama al 131.",
+    "Si no responde y no respira, inicia RCP.",
+    "Enfría las quemaduras con agua fría y cúbrelas con un paño limpio; separa los dedos quemados con gasa.",
+    "Si está pálida o mareada, acuéstala, levántale las piernas y abrígala."
+   ],
+   "no_hacer": [
+    "No te acerques a menos de 6 metros de cables de alta tensión con corriente.",
+    "No uses objetos mojados ni metálicos para separarla.",
+    "No la muevas si pudo caerse o golpearse, salvo peligro (incendio o explosión).",
+    "No pongas hielo, mantequilla ni cremas, ni revientes ampollas."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (descarga eléctrica)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Lesión eléctrica",
+     "url": "https://medlineplus.gov/spanish/ency/article/000053.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "hemorragia",
+   "titulo": "Herida que sangra mucho (hemorragia)",
+   "tambien": [
+    "sangra mucho",
+    "no para de sangrar",
+    "corte profundo",
+    "sangre a chorros",
+    "hemorragia",
+    "torniquete",
+    "se cortó con un vidrio y sangra"
+   ],
+   "urgente_si": [
+    "La sangre sale a chorros o no para tras 10 minutos de presión",
+    "Herida grande o profunda",
+    "Piel pálida, fría y sudorosa, mareo o confusión (shock)",
+    "Posible sangrado interno: vómito o deposiciones con sangre, dolor fuerte de guata tras un golpe"
+   ],
+   "pasos": [
+    "Si sangra mucho, llama o pide que llamen al 131.",
+    "Si tienes guantes, póntelos.",
+    "Aprieta fuerte y directo sobre la herida con un paño limpio, gasa o, si no hay nada, con tu mano.",
+    "Si la sangre traspasa el paño, no lo saques: pon otro encima y sigue apretando.",
+    "Si es en un brazo o pierna y no parece quebrado, levántalo sobre el nivel del corazón.",
+    "Acuesta a la persona, levántale los pies unos 30 cm y abrígala.",
+    "Solo si el sangrado de un brazo o pierna amenaza la vida y la presión no basta: pon un torniquete 5 a 7 cm sobre la herida (no sobre la articulación), apriétalo hasta que pare y anota la hora."
+   ],
+   "no_hacer": [
+    "No saques el paño empapado: puedes arrancar el coágulo.",
+    "No mires a cada rato si dejó de sangrar.",
+    "No saques objetos clavados.",
+    "No intentes limpiar una herida grande."
+   ],
+   "llamar": "131 (SAMU)",
+   "nota": "El manual ACHS (antiguo) indica soltar el torniquete cada 15 minutos; MedlinePlus solo indica anotar la hora y avisar al personal de salud. Ante duda, seguir las indicaciones del 131.",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Cuidados de urgencia (hemorragias)",
+     "url": "https://www.crececontigo.gob.cl/tema/cuidados-de-urgencia/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Sangrado",
+     "url": "https://medlineplus.gov/spanish/ency/article/000045.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "ACHS - Manual de primeros auxilios",
+     "url": "https://achs.cl/docs/librariesprovider2/empresa/centro-de-fichas/trabajadores/manual-de-primeros-auxilios.pdf",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "herida-leve",
+   "titulo": "Herida leve, corte o rasmillón",
+   "tambien": [
+    "me corté",
+    "corte en el dedo",
+    "rasmillón",
+    "raspón",
+    "herida chica",
+    "me clavé un clavo",
+    "me pinché con algo oxidado"
+   ],
+   "urgente_si": [
+    "No para de sangrar después de 10 minutos de presión",
+    "Bordes separados, herida profunda o en labio, párpado o ceja",
+    "Tiene tierra, vidrio u objetos que no salen",
+    "Fue con clavo, objeto oxidado o sucio (puede necesitar vacuna antitetánica)",
+    "Signos de infección: más dolor, enrojecimiento, hinchazón, pus o fiebre"
+   ],
+   "pasos": [
+    "Lávate las manos.",
+    "Presiona con una gasa o paño limpio hasta que pare de sangrar.",
+    "Lava la herida con agua limpia (o suero fisiológico) y jabón suave, de lo más limpio a lo más sucio.",
+    "Si es un pinchazo, enjuaga al menos 5 minutos con agua corriente.",
+    "Cubre con un parche o gasa limpia.",
+    "Revísala los días siguientes por si se infecta."
+   ],
+   "no_hacer": [
+    "No uses agua oxigenada ni alcohol sobre la herida.",
+    "No pongas polvos, pomadas ni otras sustancias sin indicación.",
+    "No soples ni respires sobre la herida.",
+    "No hurgues para sacar objetos clavados."
+   ],
+   "llamar": "Salud Responde 600 360 7777",
+   "nota": "MedlinePlus sugiere ungüento antibacteriano; el manual UC 2025 y Crece Contigo (Chile) dicen no aplicar pomadas ni cremas sin indicación. Se siguió la fuente chilena.",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (pequeños cortes)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Cortaduras y heridas penetrantes",
+     "url": "https://medlineplus.gov/spanish/ency/article/000043.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "objeto-clavado",
+   "titulo": "Cuerpo extraño clavado (cuchillo, fierro, vidrio, palo)",
+   "tambien": [
+    "tiene algo clavado",
+    "cuchillo clavado",
+    "fierro enterrado",
+    "vidrio clavado",
+    "se clavó un palo",
+    "astilla grande"
+   ],
+   "urgente_si": [
+    "El objeto es grande o está profundo",
+    "Está en el pecho, la guata, la cabeza o el cuello",
+    "Sangra mucho o la persona se ve pálida y mareada"
+   ],
+   "pasos": [
+    "Llama al 131.",
+    "Deja el objeto donde está.",
+    "Pon gasas o paños alrededor del objeto (no encima) para que no se mueva, y fíjalos con cinta o venda.",
+    "Mantén a la persona quieta, acostada y abrigada.",
+    "Quédate con ella hasta que llegue la ayuda."
+   ],
+   "no_hacer": [
+    "No saques ni muevas el objeto: puede sangrar más y causar más daño.",
+    "No hurgues en la herida."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Sangrado",
+     "url": "https://medlineplus.gov/spanish/ency/article/000045.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - Cortaduras y heridas penetrantes",
+     "url": "https://medlineplus.gov/spanish/ency/article/000043.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "fractura",
+   "titulo": "Fractura (hueso quebrado)",
+   "tambien": [
+    "se quebró un hueso",
+    "hueso roto",
+    "fractura",
+    "no puede mover el brazo",
+    "pierna chueca después de una caída",
+    "hueso salido",
+    "se cayó y le duele mucho"
+   ],
+   "urgente_si": [
+    "El hueso sale por la piel",
+    "Posible lesión de cuello, espalda, cadera o muslo",
+    "La parte bajo la lesión está pálida, fría o azulada",
+    "Sangra mucho o la persona no responde"
+   ],
+   "pasos": [
+    "Calma a la persona y mantenla quieta.",
+    "Si hay herida, cúbrela con un paño limpio y seco.",
+    "Si debes trasladarla, inmoviliza con una tablilla improvisada (tabla, diario doblado, paraguas), con una tela entre la tablilla y la piel, sujetando por arriba y por abajo de la lesión, sin apretar mucho.",
+    "Pon frío (hielo envuelto en un paño) para el dolor y la hinchazón.",
+    "Abriga a la persona.",
+    "Llévala a urgencia o llama al 131."
+   ],
+   "no_hacer": [
+    "No intentes enderezar ni acomodar el hueso.",
+    "No muevas a la persona si puede haber lesión de cuello o espalda: inmoviliza la cabeza con toallas enrolladas y pide ayuda.",
+    "No le des comida ni bebida.",
+    "No pruebes si el hueso se mueve."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (fracturas)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Fractura",
+     "url": "https://medlineplus.gov/spanish/ency/article/000001.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "esguince",
+   "titulo": "Esguince o torcedura",
+   "tambien": [
+    "me doblé el tobillo",
+    "torcedura",
+    "esguince",
+    "se me hinchó el tobillo",
+    "me torcí la muñeca",
+    "me doblé el pie"
+   ],
+   "urgente_si": [
+    "Crees que puede haber fractura o la articulación se ve fuera de lugar",
+    "Dolor muy fuerte",
+    "Sonó un 'crack' y de inmediato no puede usar la articulación"
+   ],
+   "pasos": [
+    "Deja descansar la articulación y no apoyes peso.",
+    "Pon frío: hielo envuelto en un paño, nunca directo sobre la piel.",
+    "Venda firme pero sin apretar para limitar el movimiento.",
+    "Mantén la zona elevada sobre el nivel del corazón.",
+    "Consulta si la hinchazón no baja en 2 días o el dolor sigue después de varias semanas."
+   ],
+   "no_hacer": [
+    "No pongas el hielo directo sobre la piel.",
+    "No apoyes peso sobre la articulación lesionada.",
+    "No intentes enderezar ni estirar la zona."
+   ],
+   "llamar": "Salud Responde 600 360 7777; si parece fractura: urgencia",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Esguinces",
+     "url": "https://medlineplus.gov/spanish/ency/article/000041.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "golpe-cabeza",
+   "titulo": "Golpe en la cabeza (TEC)",
+   "tambien": [
+    "golpe en la cabeza",
+    "se cayó y se pegó en la cabeza",
+    "TEC",
+    "chichón",
+    "vomita después de un golpe",
+    "se golpeó la cabeza y está raro",
+    "niño se cayó de cabeza"
+   ],
+   "urgente_si": [
+    "Perdió el conocimiento, aunque sea unos segundos",
+    "Vomita, tiene mucho sueño o está confundido",
+    "Dolor de cabeza fuerte, convulsión o dificultad para hablar",
+    "Debilidad en brazos o piernas, o pupilas de distinto tamaño",
+    "Sale sangre o líquido claro por la nariz o los oídos"
+   ],
+   "pasos": [
+    "Si perdió el conocimiento o tiene alguna señal de alarma, llama al 131.",
+    "No la muevas; si pudo lesionarse el cuello, sujeta la cabeza alineada con el cuerpo con tus manos.",
+    "Si vomita, gírala de lado moviendo cabeza, cuello y cuerpo juntos.",
+    "Si sangra el cuero cabelludo, presiona con un paño limpio (si crees que el cráneo está quebrado, solo cubre, sin apretar).",
+    "Pon frío envuelto en un paño sobre el chichón, poniendo y sacando por ratos.",
+    "Observa a la persona al menos 24 horas; vuelve a consultar si aparecen señales de alarma, aunque sea días después."
+   ],
+   "no_hacer": [
+    "No le des comida ni bebida si está mareada, vomita o confundida.",
+    "No le saques el casco si el golpe fue fuerte.",
+    "No la sacudas.",
+    "No levantes a un niño que se cayó y tiene señales de golpe en la cabeza.",
+    "No tomes alcohol en las 48 horas siguientes a un golpe fuerte."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (golpes y chichones en la cabeza)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de traumatismo craneal",
+     "url": "https://medlineplus.gov/spanish/ency/article/000028.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "desmayo",
+   "titulo": "Desmayo (síncope)",
+   "tambien": [
+    "se desmayó",
+    "se desvaneció",
+    "me voy a desmayar",
+    "se puso pálido y se cayó",
+    "síncope",
+    "lipotimia",
+    "se le bajó la presión"
+   ],
+   "urgente_si": [
+    "No despierta en 1 a 2 minutos",
+    "Se cayó de altura o está herida",
+    "Está embarazada, tiene más de 50 años o es diabética",
+    "Dolor o presión en el pecho, latidos fuertes o irregulares",
+    "No puede hablar, ver o mover un brazo o pierna; convulsiona o se orinó"
+   ],
+   "pasos": [
+    "Si ves que se va a caer, ayúdala para que no se golpee.",
+    "Acuéstala de espalda en el suelo y levántale las piernas unos 30 cm.",
+    "Ventila el lugar y aleja a la gente.",
+    "Si respira pero no despierta, ponla de lado (posición lateral de seguridad) y llama al 131.",
+    "Cuando despierte, déjala descansar acostada.",
+    "Si pudo ser por azúcar baja, dale algo dulce solo cuando esté bien despierta.",
+    "Si nunca se había desmayado o le pasa seguido, que consulte."
+   ],
+   "no_hacer": [
+    "No le des comida ni agua mientras no esté totalmente consciente.",
+    "No le tires agua en la cara ni le des cachetadas.",
+    "No le pongas almohada bajo la cabeza mientras esté inconsciente."
+   ],
+   "llamar": "131 si no despierta o hay señales de alarma",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Desmayo",
+     "url": "https://medlineplus.gov/spanish/ency/article/003092.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de pérdida del conocimiento",
+     "url": "https://medlineplus.gov/spanish/ency/article/000022.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "inconsciente-respira",
+   "titulo": "Persona inconsciente que respira (posición lateral de seguridad)",
+   "tambien": [
+    "está inconsciente pero respira",
+    "no responde pero respira",
+    "posición lateral de seguridad",
+    "posición de recuperación",
+    "dejarlo de lado",
+    "no despierta",
+    "está borracho y no despierta"
+   ],
+   "urgente_si": [
+    "Siempre: una persona que no responde es una emergencia",
+    "Si deja de respirar: inicia RCP de inmediato"
+   ],
+   "pasos": [
+    "Llama o pide que llamen al 131.",
+    "Revisa si respira: acerca tu mejilla a su boca y nariz y mira si el pecho sube, durante 3 a 5 segundos.",
+    "Si no crees que tenga lesión de cuello o espalda, ponla de lado: estira hacia arriba el brazo más cercano a ti, pon el dorso de su otra mano bajo su mejilla, dobla su pierna de arriba y gírala hacia ti.",
+    "Inclina suavemente su cabeza hacia atrás para que pase el aire.",
+    "Abrígala y no la dejes sola.",
+    "Revisa su respiración seguido; si deja de respirar, ponla de espaldas e inicia RCP."
+   ],
+   "no_hacer": [
+    "No le des comida ni bebida.",
+    "No le pongas almohada bajo la cabeza.",
+    "Si pudo golpearse el cuello o la espalda, no la muevas mientras respire; si vomita, gírala de lado como un bloque (cabeza, cuello y cuerpo juntos)."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Cuidados de urgencia (posición de seguridad)",
+     "url": "https://www.crececontigo.gob.cl/tema/cuidados-de-urgencia/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de pérdida del conocimiento",
+     "url": "https://medlineplus.gov/spanish/ency/article/000022.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - RCP adultos",
+     "url": "https://medlineplus.gov/spanish/ency/article/000013.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "rcp-adultos",
+   "titulo": "Persona que no respira: RCP en adultos",
+   "tambien": [
+    "no respira",
+    "paro cardíaco",
+    "RCP",
+    "reanimación",
+    "masaje cardíaco",
+    "se desplomó y no respira",
+    "desfibrilador DEA"
+   ],
+   "urgente_si": [
+    "No responde y no respira, o solo boquea: empieza RCP ya"
+   ],
+   "pasos": [
+    "Revisa que el lugar sea seguro.",
+    "Háblale fuerte y muévele los hombros. Si no responde, grita por ayuda: que alguien llame al 131 y traiga un desfibrilador (DEA) si hay uno cerca.",
+    "Ponla de espaldas sobre una superficie firme y arrodíllate a su lado.",
+    "Pon el talón de una mano en el centro del pecho (entre los pezones) y la otra mano encima; brazos rectos.",
+    "Comprime fuerte y rápido: 5 a 6 cm de profundidad, 100 a 120 veces por minuto, dejando que el pecho vuelva a subir (ritmo de 'La Macarena' o 'Stayin' Alive').",
+    "Si sabes hacerlo y te sientes seguro: 30 compresiones y 2 respiraciones boca a boca. Si no, solo compresiones sin parar.",
+    "Si llega un DEA, enciéndelo y sigue sus instrucciones; que nadie toque a la persona cuando lo indique.",
+    "Sigue hasta que llegue la ayuda o la persona respire; si respira, ponla de lado."
+   ],
+   "no_hacer": [
+    "No empieces compresiones si respira normalmente, tose o se mueve.",
+    "No pierdas tiempo buscando el pulso si no eres profesional de salud.",
+    "No pares las compresiones más de 10 segundos."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - RCP adultos y niños después del inicio de la pubertad",
+     "url": "https://medlineplus.gov/spanish/ency/article/000013.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "rcp-ninos-lactantes",
+   "titulo": "Niño o bebé que no respira: RCP infantil",
+   "tambien": [
+    "bebé no respira",
+    "niño no respira",
+    "RCP bebé",
+    "guagua no respira",
+    "reanimación de niño",
+    "lactante morado que no respira"
+   ],
+   "urgente_si": [
+    "El niño o bebé no responde y no respira: empieza RCP ya"
+   ],
+   "pasos": [
+    "Llámalo fuerte; a un bebé tócale la planta del pie. Nunca lo sacudas.",
+    "Grita por ayuda: que alguien llame al 131 y traiga un DEA. Si estás solo, haz 2 minutos de RCP antes de ir a llamar (puedes llevar al bebé contigo si no hay lesión de columna).",
+    "Ponlo de espaldas sobre una superficie firme.",
+    "Bebé (menor de 1 año): comprime el centro del pecho, justo bajo la línea de los pezones, con dos dedos o con ambos pulgares rodeando el pecho, unos 4 cm.",
+    "Niño (1 año hasta la pubertad): comprime el centro del pecho con el talón de la mano, unos 5 cm (un tercio del pecho).",
+    "Comprime rápido: 100 a 120 por minuto, dejando que el pecho vuelva a subir.",
+    "Si sabes: después de cada 30 compresiones da 2 respiraciones suaves (en el bebé cubre boca y nariz con tu boca). Si hay dos rescatistas: 15 compresiones y 2 respiraciones.",
+    "Sigue hasta que llegue ayuda o respire; si respira, ponlo de lado y vigílalo."
+   ],
+   "no_hacer": [
+    "No sacudas al bebé.",
+    "No empieces compresiones si respira, tose o se mueve normalmente.",
+    "No busques el pulso si no eres profesional de salud."
+   ],
+   "llamar": "131 (SAMU)",
+   "nota": "El manual UC 2025 indica 15 compresiones y 2 respiraciones en niños y bebés; MedlinePlus indica 30:2 con un rescatista y 15:2 con dos. Crece Contigo describe solo respiración artificial sin compresiones (método antiguo), por eso no se usó en este punto.",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025), RCP pediátrico",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - RCP en bebés",
+     "url": "https://medlineplus.gov/spanish/ency/article/000011.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - RCP en niños pequeños (de 1 año hasta la pubertad)",
+     "url": "https://medlineplus.gov/spanish/ency/article/000012.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "atragantamiento-adulto",
+   "titulo": "Atragantamiento en adulto o niño mayor de 1 año",
+   "tambien": [
+    "se atoró",
+    "se atragantó",
+    "no puede respirar comiendo",
+    "se le fue algo a la garganta",
+    "maniobra de Heimlich",
+    "se ahoga con comida",
+    "niño se tragó algo"
+   ],
+   "urgente_si": [
+    "No puede hablar, toser ni respirar, o se agarra el cuello",
+    "Labios azulados",
+    "Pierde el conocimiento"
+   ],
+   "pasos": [
+    "Pregúntale: '¿Te estás atorando?'. Si tose fuerte y puede hablar, anímalo a seguir tosiendo y quédate a su lado.",
+    "Si no puede hablar ni respirar: pide que alguien llame al 131.",
+    "Párate detrás, inclínalo hacia adelante y dale 5 golpes firmes con la palma entre los omóplatos.",
+    "Luego 5 compresiones abdominales (Heimlich): puño justo sobre el ombligo y bajo el esternón, la otra mano encima, empuja hacia adentro y arriba.",
+    "Repite 5 golpes y 5 compresiones hasta que salga el objeto o pierda el conocimiento.",
+    "Embarazadas o personas obesas: haz las compresiones en el centro del pecho.",
+    "Si pierde el conocimiento: acuéstalo en el suelo e inicia RCP; si ves el objeto suelto en la boca, sácalo.",
+    "Después, siempre debe revisarlo un médico."
+   ],
+   "no_hacer": [
+    "No intervengas si tose fuerte y puede hablar.",
+    "No metas los dedos a ciegas ni abras la boca a la fuerza para sacar el objeto."
+   ],
+   "llamar": "131 (SAMU)",
+   "nota": "El manual UC 2025 describe solo la maniobra de Heimlich; MedlinePlus alterna 5 golpes en la espalda y 5 compresiones abdominales. No se contradicen en lo esencial.",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (atoramiento en niños)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Asfixia en adulto o niño mayor de 1 año",
+     "url": "https://medlineplus.gov/spanish/ency/article/000049.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "atragantamiento-lactante",
+   "titulo": "Atragantamiento en bebé (menor de 1 año)",
+   "tambien": [
+    "bebé atorado",
+    "guagua se atoró",
+    "lactante no puede respirar",
+    "bebé se ahoga con leche",
+    "se tragó algo la guagua",
+    "bebé se pone morado"
+   ],
+   "urgente_si": [
+    "No puede llorar, toser ni respirar",
+    "Se pone azul o morado",
+    "Pierde el conocimiento"
+   ],
+   "pasos": [
+    "Si tose fuerte o llora, déjalo toser y quédate a su lado.",
+    "Si no puede respirar ni llorar: pide que alguien llame al 131.",
+    "Ponlo boca abajo sobre tu antebrazo, apoyado en tu muslo, sujetando su mandíbula, con la cabeza más baja que el cuerpo.",
+    "Dale 5 golpes firmes entre los omóplatos con el talón de la mano.",
+    "Dalo vuelta boca arriba (cabeza más baja) y haz 5 compresiones en el centro del pecho, justo bajo la línea de los pezones, con dos dedos.",
+    "Repite 5 golpes y 5 compresiones hasta que salga el objeto o pierda el conocimiento.",
+    "Si pierde el conocimiento: ponlo en una superficie firme e inicia RCP de bebé; saca el objeto solo si lo ves.",
+    "Llévalo siempre a control médico después."
+   ],
+   "no_hacer": [
+    "No busques a ciegas con el dedo: saca el objeto solo si lo ves.",
+    "No hagas la maniobra si tose fuerte o llora."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (atoramiento en bebés)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Asfixia en niños menores de 1 año",
+     "url": "https://medlineplus.gov/spanish/ency/article/000048.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "convulsion",
+   "titulo": "Convulsión",
+   "tambien": [
+    "está convulsionando",
+    "ataque epiléptico",
+    "le dio una convulsión",
+    "se puso rígido y tiembla",
+    "epilepsia",
+    "convulsión por fiebre",
+    "le dio un ataque y echa espuma"
+   ],
+   "urgente_si": [
+    "Es la primera convulsión",
+    "Dura más de 5 minutos, o le viene otra sin despertar entremedio",
+    "No despierta o no vuelve a la normalidad",
+    "Ocurrió en el agua, o está embarazada, herida o es diabética"
+   ],
+   "pasos": [
+    "Mantén la calma y mira la hora para medir cuánto dura.",
+    "Ponla en el suelo en un lugar seguro y aparta muebles u objetos.",
+    "Protege su cabeza con algo blando.",
+    "Suelta la ropa apretada en el cuello y sácale los anteojos.",
+    "Déjala de lado para que no se ahogue con saliva o vómito.",
+    "Quédate con ella hasta que despierte completamente.",
+    "Si un niño convulsiona con fiebre alta, refréscalo poco a poco con agua tibia y consulta."
+   ],
+   "no_hacer": [
+    "No le metas nada a la boca (ni tus dedos) ni intentes sujetarle la lengua.",
+    "No la sujetes ni intentes detener los movimientos.",
+    "No le des agua ni comida hasta que esté bien despierta.",
+    "No metas a un niño con fiebre en agua fría.",
+    "No hagas RCP mientras convulsiona; solo si terminó y no respira."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Convulsiones",
+     "url": "https://medlineplus.gov/spanish/ency/article/003200.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "fiebre-ninos",
+   "titulo": "Fiebre en bebés y niños: cuándo consultar",
+   "tambien": [
+    "mi guagua tiene fiebre",
+    "fiebre en bebé",
+    "niño con temperatura alta",
+    "calentura",
+    "fiebre de 39",
+    "cómo tomar la temperatura",
+    "guagua helada"
+   ],
+   "urgente_si": [
+    "Bebé menor de 3 meses con fiebre, o con temperatura bajo 36 °C",
+    "Fiebre con tos frecuente, respiración agitada o ruidosa",
+    "Fiebre con cuello rígido, vómitos, diarrea, dolor de oídos o manchas en la piel",
+    "Muy decaído, somnoliento o no quiere comer ni beber"
+   ],
+   "pasos": [
+    "Toma la temperatura en la axila con termómetro, de 3 a 5 minutos. Sobre 37,5 °C es fiebre.",
+    "Desabrígalo: ropa liviana, sin mantas, pieza fresca.",
+    "Si toma pecho, sigue dándole de mamar; a niños mayores ofréceles líquidos.",
+    "Menor de 6 meses con fiebre: consulta siempre.",
+    "Mayor de 3 meses con más de 38 °C: desabrígalo; si sigue al otro día, consulta.",
+    "Consulta también si la fiebre dura más de 48 horas, no baja de 39 °C o sigue decaído aunque baje."
+   ],
+   "no_hacer": [
+    "No le des remedios a una guagua sin indicación del pediatra: algunos de adultos son peligrosos para ellos.",
+    "No lo abrigues con mantas.",
+    "No uses termómetro de mercurio en la boca ni en el ano."
+   ],
+   "llamar": "Salud Responde 600 360 7777; urgencia: SAPU o 131",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Problemas de salud frecuentes (fiebre o hipotermia)",
+     "url": "https://www.crececontigo.gob.cl/tema/problemas-de-salud-frecuentes/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Enfermedades (fiebre)",
+     "url": "https://www.crececontigo.gob.cl/tema/enfermedades/",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "diarrea-deshidratacion",
+   "titulo": "Vómitos y diarrea con deshidratación (suero oral)",
+   "tambien": [
+    "diarrea",
+    "vómitos",
+    "deshidratación",
+    "suero oral",
+    "sales de rehidratación",
+    "guagua con diarrea",
+    "boca seca y no orina"
+   ],
+   "urgente_si": [
+    "Ojos hundidos, boca o lengua seca, llanto sin lágrimas",
+    "Orina poco o muy oscura",
+    "Muy somnoliento o no quiere comer ni beber",
+    "Deposiciones negras o con sangre",
+    "Fiebre sobre 38,5 °C en niños, o bebé menor de 6 meses",
+    "Vómitos y diarrea al mismo tiempo, o vomita 3 a 4 veces en 2 horas",
+    "Adulto confundido o que pierde el conocimiento"
+   ],
+   "pasos": [
+    "Da sales de rehidratación oral (por ejemplo 'Sodio 60' o 'Na 60'), que se venden en farmacias o se piden en el centro de salud.",
+    "Ofrece líquido de a poco y seguido, en pequeñas cantidades.",
+    "Guaguas: sigue dando pecho, más seguido que lo normal.",
+    "Niños y adultos: que beban harto; agua o leche también sirven.",
+    "Ofrece comidas simples.",
+    "Lávate bien las manos después de mudar, ir al baño o atender al enfermo."
+   ],
+   "no_hacer": [
+    "No des remedios para cortar la diarrea sin indicación del centro de salud.",
+    "No des jugos de fruta, postres ni bebidas azucaradas hasta que pase la diarrea: el azúcar aumenta las pérdidas.",
+    "No tomes pastillas de sales minerales."
+   ],
+   "llamar": "Salud Responde 600 360 7777; signos de deshidratación: urgencia",
+   "nota": "No encontramos una receta oficial chilena de suero casero, por eso no se incluye; Crece Contigo recomienda soluciones de farmacia o del centro de salud.",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Enfermedades (diarrea)",
+     "url": "https://www.crececontigo.gob.cl/tema/enfermedades/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Problemas de salud frecuentes (vómitos, diarrea)",
+     "url": "https://www.crececontigo.gob.cl/tema/problemas-de-salud-frecuentes/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Deshidratación",
+     "url": "https://medlineplus.gov/spanish/ency/article/000982.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "golpe-de-calor",
+   "titulo": "Golpe de calor e insolación",
+   "tambien": [
+    "insolación",
+    "golpe de calor",
+    "mucho calor y se siente mal",
+    "piel caliente y roja",
+    "se desmayó por el calor",
+    "ola de calor",
+    "calambres por calor"
+   ],
+   "urgente_si": [
+    "Piel caliente, roja y seca, pulso rápido",
+    "Dolor de cabeza fuerte, confusión o pérdida de conciencia",
+    "Convulsiones"
+   ],
+   "pasos": [
+    "Si hay señales de golpe de calor, llama de inmediato al 131.",
+    "Lleva a la persona a un lugar fresco y a la sombra, y desabrígala.",
+    "Enfríala con paños con agua fría en cuello, axilas y frente, o con un baño frío o rociándola con agua.",
+    "Si vomita, recuéstala de lado.",
+    "Agotamiento por calor (debilidad, cansancio, mareo, náuseas, sin confusión): descanso en un lugar fresco y beber agua. Si dura más de 1 hora, llama a Salud Responde o consulta."
+   ],
+   "no_hacer": [
+    "No le des líquidos si está confundida, inconsciente o muy deshidratada.",
+    "No le des alcohol ni bebidas azucaradas.",
+    "Nunca dejes a bebés, niños o adultos mayores en un auto estacionado, aunque tenga las ventanas abiertas."
+   ],
+   "llamar": "131 (SAMU); agotamiento por calor: Salud Responde 600 360 7777",
+   "nota": "MINSAL (2016) indica no dar líquidos a una persona con golpe de calor claramente deshidratada (rehidratar bajo supervisión médica); el manual UC 2025 dice hidratar si está consciente. Se siguió MINSAL: líquidos solo en el agotamiento por calor con la persona consciente.",
+   "fuentes": [
+    {
+     "nombre": "MINSAL - Prevención ante episodios de alta temperatura",
+     "url": "https://www.minsal.cl/?p=83052",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MINSAL - Recomendaciones para protegerse de la ola de calor (2016)",
+     "url": "https://www.minsal.cl/minsal-entrega-recomendaciones-a-la-poblacion-a-protegerse-de-la-ola-de-calor/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "hipotermia",
+   "titulo": "Hipotermia (mucho frío en el cuerpo)",
+   "tambien": [
+    "hipotermia",
+    "tiene mucho frío y está confundido",
+    "se mojó y está helado",
+    "tirita y no para",
+    "niño muy frío",
+    "frío extremo en albergue"
+   ],
+   "urgente_si": [
+    "Confusión, somnolencia o le cuesta pensar",
+    "Temblor que no se detiene, o dejó de temblar estando muy frío",
+    "Respiración o pulso lentos, o no responde"
+   ],
+   "pasos": [
+    "Llama al 131 si hay confusión u otra señal de alarma.",
+    "Llévala a un lugar techado y templado; si no se puede, protégela del viento y aíslala del suelo con una manta.",
+    "Cámbiale la ropa mojada por ropa seca.",
+    "Cubre cuerpo, cabeza y cuello con mantas.",
+    "Puedes calentarla con tu propio cuerpo o con compresas tibias en cuello, pecho e ingle.",
+    "Si está despierta y traga bien, dale bebidas calientes y dulces sin alcohol.",
+    "Si no responde y no respira, inicia RCP."
+   ],
+   "no_hacer": [
+    "No uses calor directo: agua caliente, guatero, frazada eléctrica o estufa.",
+    "No le des alcohol.",
+    "No asumas que está muerta porque está fría e inmóvil."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "MedlinePlus en español - Hipotermia",
+     "url": "https://medlineplus.gov/spanish/ency/article/000038.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (exposición al frío)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "congelamiento",
+   "titulo": "Congelamiento (dedos, orejas, nariz)",
+   "tambien": [
+    "congelamiento",
+    "dedos congelados",
+    "se me congelaron los pies",
+    "piel blanca y dura por el frío",
+    "orejas congeladas",
+    "no siento los dedos por el frío"
+   ],
+   "urgente_si": [
+    "Piel blanca, grisácea o dura, sin sensibilidad",
+    "Ampollas o piel negra",
+    "No recupera el color rosado al calentarla",
+    "Hay también hipotermia (confusión, temblor intenso)"
+   ],
+   "pasos": [
+    "Atiende primero la hipotermia si la hay.",
+    "Lleva a la persona a un lugar abrigado; sácale la ropa mojada y las joyas apretadas.",
+    "Si hay ayuda médica cerca: envuelve las zonas en paños secos y limpios, separa los dedos con gasa y llévala a urgencia.",
+    "Si no hay ayuda cerca: remoja las partes en agua tibia (nunca caliente) 15 a 30 minutos, o caliéntalas contra tu cuerpo.",
+    "Deja de calentar cuando la piel se ponga rosada; puede doler mucho.",
+    "Dale bebidas calientes."
+   ],
+   "no_hacer": [
+    "No frotes ni masajees la zona, tampoco con nieve.",
+    "No uses calor directo: estufa, fogata, guatero, frazada eléctrica o secador.",
+    "No descongeles si existe riesgo de que se vuelva a congelar.",
+    "No revientes las ampollas."
+   ],
+   "llamar": "Urgencia o 131 si es grave",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (congelamiento)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Congelación",
+     "url": "https://medlineplus.gov/spanish/ency/article/000057.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "monoxido-de-carbono",
+   "titulo": "Intoxicación por monóxido de carbono (brasero, estufa, calefont, generador)",
+   "tambien": [
+    "brasero",
+    "intoxicación con brasero",
+    "monóxido de carbono",
+    "dolor de cabeza con la estufa",
+    "se marearon con el calefont",
+    "generador dentro de la casa",
+    "toda la familia con dolor de cabeza"
+   ],
+   "urgente_si": [
+    "Desmayo, convulsiones, debilidad muscular o no responde",
+    "Falta de aire o dolor de pecho",
+    "Niños pequeños, adultos mayores o personas con enfermedad del corazón o pulmón (más riesgo)"
+   ],
+   "pasos": [
+    "Sal de inmediato de la pieza contaminada hacia un lugar ventilado o al aire libre.",
+    "Abre puertas y ventanas.",
+    "Llama al CITUC o pide atención médica de inmediato; si es grave, llama al 131.",
+    "Si no responde y no respira, inicia RCP.",
+    "Antes de volver, haz revisar estufas, calefont y braseros."
+   ],
+   "no_hacer": [
+    "No uses braseros.",
+    "No instales el calefont dentro del baño.",
+    "No uses estufas o calefont en mal estado: instálalos con personal calificado y mantenlos.",
+    "No esperes a sentir olor: el monóxido no se ve ni se huele."
+   ],
+   "llamar": "CITUC +56 2 2635 3800; grave: 131",
+   "fuentes": [
+    {
+     "nombre": "CITUC - Alerta monóxido de carbono",
+     "url": "https://cituc.uc.cl/wp-content/uploads/2022/09/Monoxido-4.0.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Intoxicación con monóxido de carbono",
+     "url": "https://medlineplus.gov/spanish/ency/article/002804.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "intoxicacion-medicamentos-productos",
+   "titulo": "Intoxicación por medicamentos o productos del hogar",
+   "tambien": [
+    "se tomó unas pastillas",
+    "tomó remedios de más",
+    "intoxicación",
+    "se tomó un producto de limpieza",
+    "se tomó parafina",
+    "veneno para ratones",
+    "sobredosis"
+   ],
+   "urgente_si": [
+    "No responde, convulsiona o le cuesta respirar",
+    "Dolor de pecho, palpitaciones o confusión",
+    "Quemaduras en la boca o los labios"
+   ],
+   "pasos": [
+    "Llama de inmediato al CITUC (atiende 24 horas) y sigue sus indicaciones; si está grave, llama al 131.",
+    "Guarda el envase o frasco y un poco de lo que tomó.",
+    "Anota qué tomó, cuánto, a qué hora, y la edad y el peso de la persona.",
+    "Si lo respiró, llévala al aire fresco.",
+    "Si le cayó en la piel o los ojos, lava con abundante agua (ver ficha de quemadura química).",
+    "Llévala a urgencia con el envase."
+   ],
+   "no_hacer": [
+    "No esperes a tener todos los datos ni a que aparezcan síntomas para pedir ayuda.",
+    "No le des nada por la boca si está somnolienta, vomita o convulsiona."
+   ],
+   "llamar": "CITUC +56 2 2635 3800 (24 horas); grave: 131",
+   "fuentes": [
+    {
+     "nombre": "CITUC - Centro de Información Toxicológica UC",
+     "url": "https://cituc.uc.cl/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (intoxicaciones)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Intoxicación con hipoclorito de sodio (datos para el centro toxicológico)",
+     "url": "https://medlineplus.gov/spanish/ency/article/002488.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "cloro-lavaloza-ninos",
+   "titulo": "Niño que tomó cloro, lavaloza u otro producto de aseo",
+   "tambien": [
+    "se tomó cloro",
+    "niño tomó lavaloza",
+    "tomó detergente",
+    "se tomó un producto de aseo",
+    "tomó lejía",
+    "tiene cloro en la boca",
+    "mezclé cloro con otro producto"
+   ],
+   "urgente_si": [
+    "Vómitos (sobre todo con sangre), babeo o dolor al tragar",
+    "Tos, dificultad para respirar o hinchazón de garganta",
+    "Somnolencia, confusión o no responde"
+   ],
+   "pasos": [
+    "Llama de inmediato al CITUC (24 horas): +56 2 2635 3800. Si está grave, llama al 131.",
+    "Ten a mano el envase: nombre del producto, cuánto tomó y a qué hora, y la edad y el peso del niño.",
+    "Si le cayó en la piel o los ojos, lava con abundante agua al menos 15 minutos.",
+    "Si respiró vapores, sácalo al aire fresco.",
+    "Si el CITUC o un profesional no indica otra cosa y el niño traga bien (sin vómitos, convulsiones ni somnolencia), puedes darle agua o leche."
+   ],
+   "no_hacer": [
+    "No lo hagas vomitar, salvo que te lo indique el CITUC o un profesional.",
+    "No le des agua ni leche si vomita, convulsiona o está somnoliento.",
+    "Nunca mezcles cloro con otros productos de aseo (por ejemplo amoníaco): se libera un gas tóxico."
+   ],
+   "llamar": "CITUC +56 2 2635 3800 (24 horas); grave: 131",
+   "nota": "La indicación de dar agua o leche viene de MedlinePlus (EE.UU.) para el cloro; la página del CITUC leída no da pasos de primeros auxilios, solo pide llamar. Para lavaloza o detergentes no encontramos ficha específica: llamar al CITUC.",
+   "fuentes": [
+    {
+     "nombre": "CITUC - Aumento de exposiciones a cloro doméstico",
+     "url": "https://cituc.uc.cl/69-aumento-de-casos-de-exposiciones-a-cloro-domestico-tras-crisis-sanitaria-covid-19/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Intoxicación con hipoclorito de sodio",
+     "url": "https://medlineplus.gov/spanish/ency/article/002488.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (intoxicaciones)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "dolor-de-pecho-infarto",
+   "titulo": "Dolor de pecho (posible infarto)",
+   "tambien": [
+    "dolor en el pecho",
+    "infarto",
+    "ataque al corazón",
+    "presión en el pecho",
+    "dolor que baja al brazo",
+    "me duele el pecho y sudo frío",
+    "peso en el pecho"
+   ],
+   "urgente_si": [
+    "Dolor o sensación de peso en el pecho",
+    "Dolor que se extiende a uno o ambos brazos, al cuello, la mandíbula o entre los omóplatos",
+    "Con falta de aire, sudor frío, náuseas o mareo"
+   ],
+   "pasos": [
+    "Llama al 131 o ve de inmediato al servicio de urgencia más cercano.",
+    "Calma a la persona y ayúdala a estar en la posición más cómoda.",
+    "Si tiene un medicamento recetado para esto (por ejemplo nitroglicerina), ayúdala a tomarlo.",
+    "Si deja de responder y no respira, inicia RCP.",
+    "Si parece una crisis de pánico, igual primero hay que descartar un infarto."
+   ],
+   "no_hacer": [
+    "No esperes a ver si se pasa: cerca de un tercio de las personas con infarto muere antes de llegar al hospital.",
+    "No la dejes sola."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "MINSAL - Campaña educativa para detectar síntomas de infarto agudo al miocardio",
+     "url": "https://www.minsal.cl/ministerio-de-salud-lanza-campana-educativa-para-detectar-sintomas-de-un-infarto-agudo-al-miocardio/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Dolor torácico",
+     "url": "https://medlineplus.gov/spanish/ency/article/003079.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de dificultad respiratoria",
+     "url": "https://medlineplus.gov/spanish/ency/article/000007.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "ataque-cerebral-acv",
+   "titulo": "Signos de ataque cerebral (ACV)",
+   "tambien": [
+    "ACV",
+    "derrame cerebral",
+    "ataque cerebral",
+    "se le cayó la cara",
+    "no puede hablar bien",
+    "no puede mover un brazo",
+    "boca chueca de repente"
+   ],
+   "urgente_si": [
+    "Cara caída de un lado",
+    "No puede mantener los dos brazos estirados hacia adelante a la misma altura",
+    "No puede hablar con claridad",
+    "Pérdida repentina de equilibrio, de visión o de fuerza en una pierna"
+   ],
+   "pasos": [
+    "Revisa: pídele que sonría, que estire ambos brazos hacia adelante y que diga una frase.",
+    "Si aparece cualquiera de las señales de forma repentina, llama al 131 o ve de inmediato a la urgencia más cercana.",
+    "Si está inconsciente pero respira, ponla de lado.",
+    "Si no responde y no respira, inicia RCP."
+   ],
+   "no_hacer": [
+    "No esperes a que los síntomas pasen: hay que ir de inmediato.",
+    "No le des comida ni bebida si le cuesta tragar o está confundida."
+   ],
+   "llamar": "131 (SAMU); dudas: Salud Responde 600 360 7777",
+   "fuentes": [
+    {
+     "nombre": "MINSAL - Ataque cerebrovascular: síntomas y signos",
+     "url": "https://www.minsal.cl/ataque_cerebral_sintomas/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "asma-dificultad-respiratoria",
+   "titulo": "Crisis de asma o dificultad para respirar",
+   "tambien": [
+    "crisis de asma",
+    "no puede respirar",
+    "le falta el aire",
+    "silbido al respirar",
+    "ahogo",
+    "se le hunden las costillas al respirar",
+    "inhalador"
+   ],
+   "urgente_si": [
+    "Labios azulados",
+    "Se le hunden las costillas o clavículas al respirar",
+    "No puede hablar, o está somnoliento o agotado",
+    "No mejora 20 minutos después de su inhalador",
+    "Bebé menor de 6 meses con tos o dificultad para respirar"
+   ],
+   "pasos": [
+    "Tranquiliza a la persona y ayúdala a sentarse cómoda.",
+    "Aléjala de lo que desencadenó la crisis (humo, polvo) y ventila el lugar.",
+    "Suelta la ropa apretada.",
+    "Ayúdala a usar su inhalador recetado como le indicó su médico (idealmente con aerocámara).",
+    "Si no mejora en 20 minutos o empeora, ve a urgencia o llama al 131.",
+    "Vigila su respiración hasta que llegue ayuda; si deja de respirar, inicia RCP."
+   ],
+   "no_hacer": [
+    "No le des comida ni bebida.",
+    "No le pongas almohada bajo la cabeza si está acostada.",
+    "No supongas que mejoró solo porque dejó de sonar el silbido.",
+    "No esperes a ver si mejora para pedir ayuda si le cuesta mucho respirar."
+   ],
+   "llamar": "131 (SAMU)",
+   "nota": "El manual UC 2025 sugiere, si no hay medicamento, poner la cabeza frente al aire frío del freezer; Crece Contigo lo menciona para la laringitis de niños. No se incluyó como paso porque las otras fuentes no lo indican.",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Chile Crece Contigo - Enfermedades (asma)",
+     "url": "https://www.crececontigo.gob.cl/tema/enfermedades/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de dificultad respiratoria",
+     "url": "https://medlineplus.gov/spanish/ency/article/000007.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "hipoglicemia",
+   "titulo": "Azúcar baja en personas con diabetes (hipoglicemia)",
+   "tambien": [
+    "azúcar baja",
+    "hipoglicemia",
+    "diabético tembloroso",
+    "le bajó el azúcar",
+    "diabético confundido",
+    "sudor frío y temblor",
+    "se le pasó la insulina"
+   ],
+   "urgente_si": [
+    "Está confundida, somnolienta o no puede tragar",
+    "Convulsiona o pierde el conocimiento",
+    "No mejora después de comer algo dulce"
+   ],
+   "pasos": [
+    "Si está consciente y puede tragar, dale azúcar rápido: un vaso de agua con 3 cucharadas de azúcar, o un jugo con azúcar (250 ml), o 4 dulces o gomitas.",
+    "Después, que coma algo, por ejemplo galletas.",
+    "Si no mejora después de comer algo dulce, llévala a urgencia o llama al 131.",
+    "Si está inconsciente: no le des nada por la boca, ponla de lado y llama al 131."
+   ],
+   "no_hacer": [
+    "No le des comida ni bebida si está inconsciente.",
+    "No dejes que maneje."
+   ],
+   "llamar": "131 (SAMU)",
+   "fuentes": [
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Bajo nivel de azúcar en la sangre",
+     "url": "https://medlineplus.gov/spanish/ency/article/000386.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MedlinePlus en español - Primeros auxilios en caso de pérdida del conocimiento",
+     "url": "https://medlineplus.gov/spanish/ency/article/000022.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "sangrado-nariz",
+   "titulo": "Sangrado de nariz",
+   "tambien": [
+    "sangra de la nariz",
+    "hemorragia nasal",
+    "epistaxis",
+    "le sale sangre de la nariz",
+    "niño sangra por la nariz"
+   ],
+   "urgente_si": [
+    "No para después de 20 minutos",
+    "Empezó después de un golpe en la cabeza",
+    "Toma remedios anticoagulantes",
+    "La nariz parece quebrada"
+   ],
+   "pasos": [
+    "Siéntate e inclínate hacia adelante, respirando por la boca.",
+    "Aprieta la parte blanda de la nariz (no el hueso) con el pulgar y el índice, entre 5 y 10 minutos seguidos.",
+    "No sueltes antes de tiempo para revisar.",
+    "Puedes poner frío (paño húmedo o hielo envuelto) sobre la nariz o la frente.",
+    "Si sigue sangrando, puedes poner una gasa limpia en el lado que sangra; si sientes que tragas sangre, sácala e inclínate hacia adelante.",
+    "Después, evita sonarte por varias horas."
+   ],
+   "no_hacer": [
+    "No eches la cabeza hacia atrás: puedes tragar sangre o ahogarte.",
+    "No te acuestes mientras sangra."
+   ],
+   "llamar": "Urgencia si no para en 20 minutos",
+   "nota": "Contradicción: Crece Contigo y el manual UC (Chile) indican taponar con gasa o algodón y apretar unos 5 minutos; MedlinePlus dice no taponar y apretar 10 minutos completos. Se siguió la fuente chilena (gasa solo si sigue sangrando) con 5 a 10 minutos.",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (hemorragia nasal)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025)",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Hemorragia nasal",
+     "url": "https://medlineplus.gov/spanish/ency/article/003106.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "quemadura-solar",
+   "titulo": "Quemadura de sol",
+   "tambien": [
+    "quemadura de sol",
+    "me quemé con el sol",
+    "piel roja por el sol",
+    "ampollas por el sol",
+    "me pelé por el sol",
+    "niño quemado por el sol"
+   ],
+   "urgente_si": [
+    "Fiebre, escalofríos, desmayo o mareo",
+    "Ampollas grandes y dolorosas, o la quemadura se hincha",
+    "Mucha sed, no orina, ojos hundidos"
+   ],
+   "pasos": [
+    "Sal del sol.",
+    "Pon paños húmedos con agua fresca varias veces al día, o date una ducha o baño fresco.",
+    "Bebe harta agua.",
+    "Usa ropa suelta de algodón.",
+    "Si salen ampollas, cúbrelas con un vendaje seco y consulta en el centro de salud."
+   ],
+   "no_hacer": [
+    "No revientes las ampollas.",
+    "No pongas mantequilla, vaselina ni productos con aceite.",
+    "No uses cremas con benzocaína o lidocaína.",
+    "No vuelvas al sol mientras la piel esté roja."
+   ],
+   "llamar": "Salud Responde 600 360 7777",
+   "fuentes": [
+    {
+     "nombre": "Chile Crece Contigo - Primeros auxilios (quemaduras de sol)",
+     "url": "https://www.crececontigo.gob.cl/tema/primeros-auxilios/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MedlinePlus en español - Quemadura solar",
+     "url": "https://medlineplus.gov/spanish/ency/article/003227.htm",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "ahogamiento",
+   "titulo": "Ahogamiento o inmersión",
+   "tambien": [
+    "se está ahogando en el agua",
+    "inmersión",
+    "lo sacaron del agua",
+    "se cayó a la piscina",
+    "casi se ahoga",
+    "se lo llevó el río",
+    "niño en la piscina sin respirar"
+   ],
+   "urgente_si": [
+    "No respira o no responde",
+    "Tose, le cuesta respirar o está confundido después de salir del agua",
+    "Siempre: toda persona que casi se ahoga debe ser revisada por un médico"
+   ],
+   "pasos": [
+    "No te pongas en peligro: si puedes, alcánzala desde la orilla con una rama, palo o cuerda atada a algo que flote.",
+    "Entra al agua solo si tienes entrenamiento en rescate y es seguro.",
+    "Pide que llamen al 131.",
+    "Si no respira, dale respiración boca a boca apenas puedas, y en tierra firme haz RCP.",
+    "Si respira, quítale la ropa mojada y abrígala; mantenla tranquila y quieta.",
+    "Llévala a un centro de salud aunque parezca estar bien: las complicaciones en los pulmones son comunes."
+   ],
+   "no_hacer": [
+    "No nades hacia la persona si no tienes entrenamiento en rescate.",
+    "No entres a aguas turbulentas ni camines sobre hielo.",
+    "No hagas la maniobra de Heimlich como rutina."
+   ],
+   "llamar": "131 (SAMU)",
+   "nota": "Prevención MINSAL: supervisar a los niños a un brazo de distancia, usar chaleco salvavidas de su talla (no alitas ni flotadores), no beber alcohol si se cuida niños o se va a nadar, y tener un teléfono a mano. La campaña MINSAL leída no trae pasos de rescate; esos son de MedlinePlus (EE.UU.).",
+   "fuentes": [
+    {
+     "nombre": "MedlinePlus en español - Ahogamiento no mortal",
+     "url": "https://medlineplus.gov/spanish/ency/article/000046.htm",
+     "pais": "US"
+    },
+    {
+     "nombre": "MINSAL - Campaña Verano 2025-2026 Seguridad en el agua",
+     "url": "https://www.minsal.cl/campana-verano-2025-2026-seguridad-en-el-agua/",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "parto-emergencia",
+   "titulo": "Parto de emergencia",
+   "tambien": [
+    "va a nacer",
+    "parto en la casa",
+    "está dando a luz",
+    "se le rompió la bolsa",
+    "contracciones muy seguidas",
+    "parto de emergencia",
+    "nació la guagua en el albergue"
+   ],
+   "urgente_si": [
+    "Siempre: llama al 131 apenas empiece el parto"
+   ],
+   "pasos": [
+    "Llama al 131 y cuenta: nombre y edad de la mujer, fecha probable de parto, hace cuánto tiene dolores y si es su primer hijo.",
+    "Habla con ella para mantenerla tranquila y dale privacidad.",
+    "Pon sábanas, toallas o mantas limpias debajo de ella.",
+    "Que se recueste de espalda, con las rodillas dobladas, los pies apoyados y las piernas bien abiertas.",
+    "Usa guantes si tienes, para no tocar los fluidos.",
+    "Ten paciencia: es la mujer la que da a luz; deja que ocurra de forma natural.",
+    "Recibe al bebé con una toalla limpia: está resbaloso, que no se caiga.",
+    "Abriga al recién nacido con una toalla o manta limpia y tibia."
+   ],
+   "no_hacer": [
+    "No dejes que se levante a buscar el baño.",
+    "No le juntes las rodillas: no frena el parto y puede dañar al bebé.",
+    "No metas los dedos en la vagina.",
+    "No tires del bebé."
+   ],
+   "llamar": "131 (SAMU)",
+   "nota": "No encontramos guía chilena para la población; fuente no chilena (Cruz Roja Americana).",
+   "fuentes": [
+    {
+     "nombre": "Cruz Roja Americana - Primeros auxilios, RCP y DEA: manual del participante (español), sección Parto de emergencia",
+     "url": "https://www.redcross.org/content/dam/redcross/atg/PHSS_UX_Content/FA-CPR-AED-Spanish-Manual.pdf",
+     "pais": "US"
+    }
+   ]
+  },
+  {
+   "id": "crisis-panico-apoyo-emocional",
+   "titulo": "Crisis de pánico y apoyo emocional después de un desastre (primeros auxilios psicológicos)",
+   "tambien": [
+    "crisis de pánico",
+    "ataque de angustia",
+    "no me puedo calmar",
+    "estoy en shock por el terremoto",
+    "apoyo emocional",
+    "primeros auxilios psicológicos",
+    "niño asustado después del desastre"
+   ],
+   "urgente_si": [
+    "Dolor de pecho: primero descartar un infarto",
+    "Habla de quitarse la vida o de hacerse daño",
+    "Agresividad, confusión grave o pérdida de contacto con la realidad"
+   ],
+   "pasos": [
+    "Busca un lugar tranquilo, con pocas distracciones.",
+    "Quédate cerca y escucha con atención; deja que hable solo si quiere.",
+    "Ayúdala a calmar la respiración: pies en el suelo, manos sobre los muslos, respirar lento tres veces.",
+    "Ayúdala con lo básico (agua, abrigo, comida, información) y a ordenar qué hacer primero.",
+    "Da información verdadera y simple; si no sabes algo, dilo.",
+    "Conéctala con su familia, sus redes de apoyo o servicios de ayuda.",
+    "Con niños: no los separes de sus cuidadores, dales tiempo y cariño, recuérdales que están seguros, mantén rutinas y responde simple, sin detalles que asusten."
+   ],
+   "no_hacer": [
+    "No la presiones a contar lo que pasó.",
+    "No interrumpas ni la apures.",
+    "No juzgues lo que siente (no digas 'deberías sentirte afortunado de estar vivo').",
+    "No hagas falsas promesas ni inventes información.",
+    "No la toques si no estás seguro de que sea apropiado."
+   ],
+   "llamar": "Prevención del suicidio *4141 (gratis, 24 horas, desde celulares); Salud Responde 600 360 7777; emergencia: 131",
+   "fuentes": [
+    {
+     "nombre": "MINSAL / ONEMI / OPS-OMS / UNICEF - Manual de talleres de Primera Ayuda Psicológica (PAP) para respondedores (2018)",
+     "url": "https://degreyd.minsal.cl/wp-content/uploads/2015/07/Manual-de-Implementaci%C3%B3n-de-Talleres-Capacitaci%C3%B3n-de-Primera-Ayuda-Psicol%C3%B3gica-PAP-para-Respondedores.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "Pontificia Universidad Católica de Chile - Manual de primeros auxilios (2025), PAP modelo ABCDE",
+     "url": "https://asuntosestudiantiles.uc.cl/wp-content/uploads/2025/06/Manual-de-Primeros-Auxilios.pdf",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MINSAL - Línea de atención *4141",
+     "url": "https://www.minsal.cl/linea-de-atencion-4141-no-estas-solo-no-estas-sola/",
+     "pais": "CL"
+    }
+   ]
+  },
+  {
+   "id": "agua-segura",
+   "titulo": "Agua segura para beber (hervir o clorar)",
+   "tambien": [
+    "agua para tomar",
+    "cómo potabilizar el agua",
+    "hervir el agua",
+    "cuántas gotas de cloro",
+    "agua de pozo",
+    "corte de agua",
+    "agua turbia"
+   ],
+   "urgente_si": [
+    "Si después de tomar agua dudosa aparecen diarrea o vómitos con signos de deshidratación, ver la ficha de diarrea y deshidratación"
+   ],
+   "pasos": [
+    "Si puedes, hierve el agua al menos 1 minuto y déjala enfriar.",
+    "Si no puedes hervirla, usa cloro común sin aroma: 10 gotas por cada litro de agua clara.",
+    "Si el agua está turbia o con color: 20 gotas por litro.",
+    "Deja reposar 30 minutos antes de usarla.",
+    "Guarda el agua en envases limpios con tapa, en un lugar fresco y sin sol directo.",
+    "Lávate las manos con agua y jabón antes de comer o cocinar y después de ir al baño."
+   ],
+   "no_hacer": [
+    "No uses cloro con aroma.",
+    "No guardes el agua en envases sin tapa."
+   ],
+   "llamar": "Salud Responde 600 360 7777",
+   "nota": "Dosis: Salud Responde (MINSAL, 2026) indica 10 gotas por litro (20 si está turbia). Un comunicado MINSAL de 2017 indicaba 5 gotas por litro. Se usó la más reciente. El resumen de búsqueda atribuye también 10 gotas a SENAPRED, pero ese PDF no se pudo leer.",
+   "fuentes": [
+    {
+     "nombre": "MINSAL Salud Responde - Consumo seguro de agua y alimentos (2026)",
+     "url": "https://saludresponde.minsal.cl/consumo-seguro-de-agua-y-alimentos/",
+     "pais": "CL"
+    },
+    {
+     "nombre": "MINSAL - SEREMI de Salud Coquimbo: recomendaciones de agua (2017)",
+     "url": "https://www.minsal.cl/?p=22009",
+     "pais": "CL"
+    }
+   ]
+  }
+ ]
+}

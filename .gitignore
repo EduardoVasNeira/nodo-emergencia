@@ -1,0 +1,5 @@
+emergencia.conf
+bin/
+data/
+*.part
+local/

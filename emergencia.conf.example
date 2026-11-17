@@ -1,0 +1,71 @@
+# Nodo de emergencia offline: configuración.
+# Copia este archivo a emergencia.conf y ajusta los valores a tu lugar.
+# Formato: VARIABLE="valor" (se lee como shell; sin espacios alrededor del =).
+
+# --- Dónde vives -------------------------------------------------------------
+LUGAR="Santiago"
+LAT="-33.45"
+LON="-70.66"
+# Radio con mapa detallado (calles), en km.
+RADIO_KM="150"
+# Zoom del mapa detallado (15 = calles, máximo de Protomaps).
+ZOOM_REGION="15"
+
+# --- País (mapa general) ------------------------------------------------------
+PAIS="CL"
+PAIS_NOMBRE="Chile"
+# Región: elige qué documentos oficiales regionales se bajan (ver documentos/<PAIS>.json).
+REGION="Metropolitana"
+# oeste,sur,este,norte
+PAIS_BBOX="-76.5,-56.1,-66.3,-17.4"
+# Zoom del mapa general (10 = ciudades y rutas, 12 = pueblos y calles principales).
+ZOOM_PAIS="12"
+
+# --- Contenido offline (Kiwix) -----------------------------------------------
+IDIOMA="es"
+# Lista "nombre:variante" del catálogo de Kiwix (variante: maxi = con imágenes, nopic = sin imágenes).
+#   wikipedia_es_all:nopic      13 GB  Wikipedia en español, sin imágenes
+#   wikipedia_es_medicine:maxi  0,5 GB Medicina, con imágenes
+#   wikivoyage_es_all:maxi      0,1 GB Guía de viaje
+#   wikibooks_es_all:maxi       0,3 GB Libros y manuales
+#   wiktionary_es_all:nopic     0,7 GB Diccionario
+ZIMS="wikipedia_es_all:nopic wikipedia_es_medicine:maxi wikivoyage_es_all:maxi wikibooks_es_all:maxi wiktionary_es_all:nopic"
+
+# --- Buscador por significado -------------------------------------------------
+# Entiende preguntas como "me duele el ojo" y muestra los artículos que responden (no inventa texto).
+# Qué contenido indexar (nombres de arriba, sin variante). Siempre incluye las guías del país.
+# Indexar la Wikipedia completa tomaría días en un equipo modesto: mejor solo medicina.
+# "nombre@Ruta1,Ruta2" indexa solo esas páginas (aquí: los manuales de primeros auxilios y
+# supervivencia de Wikilibros). Siempre incluye las fichas "qué hacer" y las guías del país.
+# Vacío = sin buscador.
+BUSCADOR_ZIMS="wikipedia_es_medicine wikibooks_es_all@Asistencia_sanitaria_inmediata,Manual_básico_de_primeros_auxilios,Montañismo/Primeros_auxilios,Excursionismo/Primeros_auxilios,Excursionismo/Supervivencia,Técnicas_de_supervivencia"
+
+# --- Red ---------------------------------------------------------------------
+# IP de este equipo en la red de la casa y puerto donde el portal queda siempre visible
+# (ej. "192.168.1.10"; vacío = solo en este equipo). El asistente de configuración la detecta.
+BIND_LAN=""
+PUERTO_LAN="8090"
+# Wi-Fi de emergencia (se enciende sola al quedar sin internet). Ahí el portal va en el puerto 80,
+# necesario para que el celular lo abra solo (portal cautivo).
+# Tarjeta Wi-Fi con modo AP (ver ./verificar.sh). Ejemplos: wlan0, wlp2s0.
+WIFI_IF="wlan0"
+SSID="EMERGENCIA-Info-Offline"
+IP_AP="10.42.0.1"
+CANAL="6"
+
+# --- Vigía -------------------------------------------------------------------
+# Revisa internet cada 30 s. Enciende tras N fallos seguidos; apaga tras M éxitos seguidos.
+FALLOS_PARA_ACTIVAR="4"
+EXITOS_PARA_DESACTIVAR="10"
+# Registro de eventos (encendido/apagado).
+LOG_FILE="/var/log/nodo-emergencia.log"
+# Comando opcional para avisar (recibe "texto" y nivel: info|aviso|ok|error). Vacío = sin avisos.
+AVISAR_CMD=""
+
+# --- Extras locales (opcional) -----------------------------------------------
+# Servicios propios que quieras mostrar en el portal (carpeta local/, ver README).
+# Puertos extra visibles desde la Wi-Fi de emergencia, separados por espacio. Vacío = solo el portal.
+PUERTOS_AP_EXTRA=""
+
+# --- Rutas -------------------------------------------------------------------
+STACK_DIR="/opt/docker/emergencia"

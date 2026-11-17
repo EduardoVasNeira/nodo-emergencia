@@ -1,0 +1,53 @@
+{
+	auto_https off
+	admin off
+}
+
+# Portal: responde a cualquier nombre (portal cautivo: el DNS de la Wi-Fi de emergencia
+# apunta todo a esta IP).
+:80 {
+	log {
+		output stdout
+		format console
+	}
+	encode gzip
+
+	# Detección de portal cautivo de Android, iOS y Windows: los mandamos al inicio.
+	@cautivo path /generate_204 /gen_204 /hotspot-detect.html /library/test/success.html /connecttest.txt /ncsi.txt /success.txt /canonical.html
+	redir @cautivo http://{$IP_AP:10.42.0.1}/ 302
+
+	handle /wiki* {
+		reverse_proxy kiwix:8080
+	}
+	handle /api/* {
+		reverse_proxy buscador:8000
+	}
+	handle_path /mapas/* {
+		root * /srv/mapas
+		header Cache-Control "public, max-age=86400"
+		file_server
+	}
+	handle_path /vendor/* {
+		root * /srv/vendor
+		header Cache-Control "public, max-age=604800"
+		file_server
+	}
+	handle_path /documentos/* {
+		root * /srv/documentos
+		header Cache-Control "public, max-age=86400"
+		file_server
+	}
+	handle /config.json {
+		root * /srv
+		header Cache-Control "no-cache"
+		file_server
+	}
+	handle {
+		root * /srv/portal
+		try_files {path} {path}.html /index.html
+		file_server
+	}
+}
+
+# Extras locales: sitios propios de cada instalación (local/Caddyfile, ver README).
+import /etc/caddy/local.caddy

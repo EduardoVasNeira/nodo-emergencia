@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar</title>
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<div class="envoltura">
+	<p><a href="/">← Inicio</a></p>
+	<form class="busca" action="/buscar" role="search">
+		<label for="q">¿Qué te pasa o qué necesitas saber?</label>
+		<div class="fila">
+			<div class="campo">
+				<svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-search"/></svg>
+				<input id="q" name="q" type="search" placeholder="Escríbelo con tus palabras" autocomplete="off" required>
+			</div>
+			<button type="submit">Buscar</button>
+		</div>
+	</form>
+
+	<p class="estado-red"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-triangle-alert"/></svg>
+		<span>Información para orientarte, no reemplaza a un profesional. Si es grave, llama al
+		<a id="fono-salud" href="tel:131">131</a>.</span></p>
+
+	<div id="ficha"></div>
+	<p class="estado" id="estado"></p>
+	<ol class="resultados" id="resultados"></ol>
+	<p class="mas" id="mas" hidden></p>
+</div>
+<script src="/fichas.js"></script>
+<script>
+(async () => {
+	const q = (new URLSearchParams(location.search).get("q") || "").trim();
+	const estado = document.getElementById("estado");
+	document.getElementById("q").value = q;
+	if (!q) { estado.textContent = "Escribe lo que te pasa o lo que buscas, con tus palabras."; return; }
+	document.title = q + " · Buscar";
+	estado.textContent = "Buscando…";
+
+	let r;
+	try {
+		const res = await fetch("/api/buscar?n=8&q=" + encodeURIComponent(q));
+		r = await res.json();
+		if (!res.ok) throw new Error(r.error || res.status);
+	} catch (e) {
+		estado.textContent = "El buscador no está disponible ahora (" + e.message + "). Prueba con la búsqueda de la biblioteca.";
+		r = { resultados: [] };
+	}
+	const lista = document.getElementById("resultados");
+	if (r.resultados.length) estado.textContent = "Lo que más se relaciona con tu pregunta:";
+	// Si lo primero es una ficha "qué hacer" revisada, se muestra completa arriba.
+	if (r.resultados.length && r.resultados[0].ficha) {
+		try {
+			const id = decodeURIComponent(r.resultados[0].url.split("#")[1] || "");
+			const f = (await cargarFichas()).find(x => x.id === id);
+			if (f) {
+				document.getElementById("ficha").replaceChildren(dibujarFicha(f));
+				estado.textContent = "Más información sobre tu pregunta:";
+				r.resultados.shift();
+			}
+		} catch (e) { /* sin fichas: queda como resultado normal */ }
+	}
+	for (const x of r.resultados) {
+		const li = document.createElement("li");
+		const a = document.createElement("a");
+		a.href = x.url; a.textContent = x.titulo;
+		const h = document.createElement("h2"); h.appendChild(a);
+		li.appendChild(h);
+		if (x.seccion) { const s = document.createElement("div"); s.className = "seccion"; s.textContent = x.seccion; li.appendChild(s); }
+		const p = document.createElement("p");
+		p.textContent = x.fragmento.length >= 400 ? x.fragmento.replace(/\s+\S*$/, "") + " …" : x.fragmento;
+		li.appendChild(p);
+		lista.appendChild(li);
+	}
+	const mas = document.getElementById("mas");
+	const enlace = document.createElement("a");
+	enlace.href = "/wiki/search?pattern=" + encodeURIComponent(q);
+	enlace.textContent = "buscar estas palabras en toda la biblioteca";
+	mas.append("¿No es lo que buscabas? Prueba otras palabras o ", enlace, " (Wikipedia completa, libros, diccionario).");
+	mas.hidden = false;
+
+	fetch("/paises/" + ((await fetch("/config.json").then(x => x.json()).catch(() => ({}))).pais || "CL") + ".json")
+		.then(x => x.json()).then(p => { const t = (p.telefonos || [])[0]; if (t) { const f = document.getElementById("fono-salud"); f.textContent = t.numero; f.href = "tel:" + t.numero.replace(/\s/g, ""); } })
+		.catch(() => {});
+})();
+</script>
+</body>
+</html>

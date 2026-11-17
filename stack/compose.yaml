@@ -1,0 +1,83 @@
+# Nodo de emergencia offline. Lo genera/copia instalar.sh; los valores vienen de .env.
+# Los puertos se publican SOLO en la IP de la casa (BIND_LAN) y en la IP de la Wi-Fi de emergencia
+# (IP_AP). Esta última existe solo con la Wi-Fi encendida: requiere net.ipv4.ip_nonlocal_bind=1.
+name: emergencia
+
+services:
+  kiwix:
+    image: ghcr.io/kiwix/kiwix-serve:3.8.2@sha256:e478554a9920412eeb5ce1d73f24e4b28445ebed233187cdd03c623c32be46a5
+    container_name: emergencia-kiwix
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "-c"]
+    # Sin .zim no arranca kiwix-serve: queda esperando en vez de reiniciar en bucle.
+    command:
+      - |
+        set -- /data/*.zim
+        if [ ! -e "$$1" ]; then echo "sin archivos .zim en /data"; exec sleep infinity; fi
+        exec kiwix-serve --port 8080 --urlRootLocation /wiki --nodatealiases "$$@"
+    volumes:
+      - ./data/zim:/data:ro
+    networks: [interna]
+
+  web:
+    image: caddy@sha256:4e2425f6009577e7c651010f16679c28f7d12df3e7b1914f941a7a3370746b3c
+    container_name: emergencia-web
+    restart: unless-stopped
+    depends_on: [kiwix]
+    environment:
+      IP_AP: ${IP_AP}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      # Extras locales (local/Caddyfile); instalar.sh lo deja vacío si no hay.
+      - ./local.caddy:/etc/caddy/local.caddy:ro
+      - ./portal:/srv/portal:ro
+      - ./data/mapas:/srv/mapas:ro
+      - ./data/vendor:/srv/vendor:ro
+      - ./data/documentos:/srv/documentos:ro
+      - ./data/config.json:/srv/config.json:ro
+      - caddy_data:/data
+    ports:
+      - "${BIND_LAN}:${PUERTO_LAN}:80"
+      - "${IP_AP}:80:80"
+    networks: [interna]
+
+  # Buscador por significado ("me duele el ojo" -> artículos de medicina). Solo lectura del índice.
+  buscador:
+    build: ./buscador
+    image: emergencia-buscador:local
+    container_name: emergencia-buscador
+    restart: unless-stopped
+    user: "${UID_GID:-1000:1000}"
+    environment:
+      HILOS: "2"
+    volumes:
+      - ./data/modelo:/modelo:ro
+      - ./data/indice:/indice:ro
+    networks: [interna]
+    cpus: 2
+    mem_limit: 1g
+
+  # Arma el índice (lo lanza descargar.sh: docker compose run --rm indexador). No queda corriendo.
+  indexador:
+    image: emergencia-buscador:local
+    profiles: [indexar]
+    user: "${UID_GID:-1000:1000}"
+    command: ["python", "indexar.py"]
+    environment:
+      BUSCADOR_ZIMS: ${BUSCADOR_ZIMS:-}
+      PAIS: ${PAIS:-}
+      HILOS: "3"
+    volumes:
+      - ./data/modelo:/modelo:ro
+      - ./data/zim:/zim:ro
+      - ./portal:/portal:ro
+      - ./data/indice:/indice
+    network_mode: none
+    cpus: 3
+    mem_limit: 3g
+
+networks:
+  interna: {}
+
+volumes:
+  caddy_data: {}

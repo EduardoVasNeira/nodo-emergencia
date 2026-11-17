@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configurar el nodo de emergencia</title>
+<link rel="stylesheet" href="/estilo.css">
+<style>
+	.paso { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 14px 0; }
+	.paso h2 { font-size: 1.15rem; margin: 0 0 4px; display: flex; gap: 10px; align-items: baseline; }
+	.paso h2 .n { font: 600 .9rem/1 var(--titulos); color: var(--azul); }
+	.paso p.ayuda { margin: 0 0 10px; color: var(--muted); font-size: .95rem; }
+	.campo-f { display: grid; gap: 4px; margin: 10px 0; }
+	.campo-f label { font-weight: 600; }
+	.campo-f input, .campo-f select { font: inherit; padding: 10px 12px; border-radius: 10px; border: 2px solid var(--line); background: var(--card); color: var(--fg); }
+	.campo-f input:focus, .campo-f select:focus { outline: none; border-color: var(--foco); }
+	.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+	.boton { font: inherit; font-weight: 700; padding: 10px 18px; min-height: 46px; border-radius: 12px; border: 0; background: var(--azul); color: #fff; }
+	.boton:hover { background: var(--azul-hover); }
+	.boton.grande { width: 100%; font-size: 1.1rem; min-height: 54px; }
+	.boton[disabled] { opacity: .5; cursor: not-allowed; }
+	.lugares { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 6px; }
+	.lugares button { width: 100%; text-align: left; font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+	.lugares button:hover { border-color: var(--azul); }
+	.lugares small { display: block; color: var(--muted); }
+	.elegido { margin: 10px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--azul-suave); }
+	.chequeos { list-style: none; padding: 0; margin: 8px 0 0; font-size: .95rem; }
+	.chequeos li { padding: 6px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 70px 1fr; gap: 8px; }
+	.chequeos .e { font-weight: 700; }
+	.chequeos .OK { color: #15803d; } .chequeos .AVISO { color: #b45309; } .chequeos .FALTA { color: var(--accent); }
+	.chequeos small { display: block; color: var(--muted); }
+	.opcion { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: start; padding: 10px 0; border-bottom: 1px solid var(--line); }
+	.opcion input { width: 22px; height: 22px; margin-top: 2px; }
+	.opcion small { display: block; color: var(--muted); }
+	.opcion .gb { color: var(--muted); white-space: nowrap; }
+	input[type=range] { width: 100%; }
+	.total { margin: 10px 0 0; font-weight: 600; }
+	.total.malo { color: var(--accent); }
+	.errores { color: var(--accent); }
+	.resumen dt { font-weight: 700; } .resumen dd { margin: 0 0 6px; color: var(--muted); }
+	@media (max-width: 480px) { .dos { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="envoltura">
+	<header class="top"><h1>Configurar el nodo de emergencia</h1></header>
+	<p class="estado-red">Responde estas preguntas una vez. Después el equipo descarga todo y queda listo para funcionar sin internet.</p>
+
+	<section class="paso" id="p-equipo">
+		<h2><span class="n">1</span>Revisión del equipo</h2>
+		<p class="ayuda" id="resumen-equipo">Revisando…</p>
+		<details id="det-equipo"><summary>Ver el detalle</summary><ul class="chequeos" id="chequeos"></ul></details>
+	</section>
+
+	<section class="paso">
+		<h2><span class="n">2</span>¿Dónde vives?</h2>
+		<p class="ayuda">El mapa con calles se centra aquí. Para buscar la ciudad se consulta OpenStreetMap (solo se envía lo que escribas).</p>
+		<div class="dos">
+			<div class="campo-f"><label for="pais">País</label><select id="pais"></select></div>
+			<div class="campo-f"><label for="busca-lugar">Ciudad o comuna</label>
+				<div style="display:flex;gap:8px"><input id="busca-lugar" placeholder="Ej: Ñuñoa, Valparaíso, Temuco" style="flex:1;min-width:0">
+				<button class="boton" id="btn-lugar" type="button">Buscar</button></div></div>
+		</div>
+		<ul class="lugares" id="lugares"></ul>
+		<div class="elegido" id="elegido" hidden></div>
+		<details><summary>Escribir las coordenadas a mano</summary>
+			<div class="dos">
+				<div class="campo-f"><label for="lat">Latitud</label><input id="lat" inputmode="decimal"></div>
+				<div class="campo-f"><label for="lon">Longitud</label><input id="lon" inputmode="decimal"></div>
+			</div>
+			<div class="campo-f"><label for="lugar">Nombre del lugar</label><input id="lugar"></div>
+		</details>
+	</section>
+
+	<section class="paso">
+		<h2><span class="n">3</span>¿Cuánto mapa con calles?</h2>
+		<p class="ayuda">Radio alrededor de tu ubicación con calles, hospitales, bomberos y albergues. El resto del país queda con rutas y ciudades.</p>
+		<div class="campo-f"><label for="radio">Radio: <span id="radio-txt"></span></label>
+			<input type="range" id="radio" min="25" max="400" step="25" value="150"></div>
+		<p class="ayuda" id="radio-mb"></p>
+	</section>
+
+	<section class="paso">
+		<h2><span class="n">4</span>¿Qué guardar para leer sin internet?</h2>
+		<p class="ayuda">Siempre se incluyen las fichas de primeros auxilios, los teléfonos y los documentos oficiales.</p>
+		<div id="contenido"></div>
+		<p class="total" id="total"></p>
+	</section>
+
+	<section class="paso">
+		<h2><span class="n">5</span>Documentos de tu región</h2>
+		<p class="ayuda">Planos de evacuación y planes de emergencia oficiales. Se elige sola según dónde vives.</p>
+		<div class="campo-f"><label for="region">Región</label><select id="region"></select></div>
+	</section>
+
+	<section class="paso">
+		<h2><span class="n">6</span>Red</h2>
+		<p class="ayuda">Cuando se corta internet, el equipo crea una Wi-Fi abierta con este nombre y la página se abre sola en los celulares.</p>
+		<div class="dos">
+			<div class="campo-f"><label for="ssid">Nombre de la Wi-Fi de emergencia</label><input id="ssid" maxlength="32" value="EMERGENCIA-Info-Offline"></div>
+			<div class="campo-f"><label for="wifi_if">Tarjeta Wi-Fi</label><input id="wifi_if"></div>
+			<div class="campo-f"><label for="bind_lan">IP de este equipo en la casa</label><input id="bind_lan" inputmode="decimal"></div>
+			<div class="campo-f"><label for="puerto_lan">Puerto en la casa</label><input id="puerto_lan" inputmode="numeric" value="8090"></div>
+		</div>
+		<p class="ayuda">En la casa, el portal queda siempre visible en <b id="url-casa"></b>.</p>
+	</section>
+
+	<section class="paso">
+		<h2><span class="n">7</span>Listo</h2>
+		<p class="errores" id="errores"></p>
+		<button class="boton grande" id="guardar" type="button">Guardar e instalar</button>
+		<div id="final" hidden>
+			<p><b>Configuración guardada.</b> Vuelve a la terminal: la descarga ya empezó y ahí se ve el avance.
+			Puede tardar desde minutos hasta un par de horas, según lo que elegiste.</p>
+			<dl class="resumen" id="resumen"></dl>
+		</div>
+	</section>
+</div>
+<script>
+"use strict";
+const T = new URLSearchParams(location.search).get("t") || "";
+const $ = (id) => document.getElementById(id);
+const api = (ruta, opciones = {}) => fetch(ruta, { ...opciones, headers: { "X-Token": T, "Content-Type": "application/json" } })
+	.then(async r => { const j = await r.json().catch(() => ({})); if (!r.ok) throw Object.assign(new Error(j.error || r.status), { datos: j }); return j; });
+let E = null, estadoMapa = "";
+
+function opcion(valor, texto) { const o = document.createElement("option"); o.value = valor; o.textContent = texto; return o; }
+
+function calcular() {
+	const r = +$("radio").value;
+	$("radio-txt").textContent = r + " km";
+	const km2 = Math.PI * r * r;                        // calles a zoom 15: unos 0,6 a 1,5 MB por 1000 km²
+	const bajo = Math.round(km2 * 0.0006), alto = Math.round(km2 * 0.0015);
+	$("radio-mb").textContent = "Tamaño aproximado del mapa: " + bajo + " a " + alto + " MB (más en ciudades grandes, menos en zonas rurales o con mar).";
+	let gb = E.gb_fijo + alto / 1000;
+	document.querySelectorAll("#contenido input:checked").forEach(c => gb += +c.dataset.gb);
+	const libre = E.disco_libre_gb;
+	$("total").textContent = "Total aproximado: " + gb.toFixed(1) + " GB de " + libre + " GB libres.";
+	$("total").classList.toggle("malo", gb > libre * 0.9);
+	$("url-casa").textContent = "http://" + ($("bind_lan").value || "este-equipo") + ":" + $("puerto_lan").value;
+}
+
+function elegirLugar(l) {
+	$("lat").value = l.lat; $("lon").value = l.lon; $("lugar").value = l.nombre;
+	estadoMapa = l.estado || "";
+	const e = $("elegido"); e.hidden = false; e.textContent = "";
+	const b = document.createElement("b"); b.textContent = l.nombre;
+	const a = document.createElement("a");
+	a.href = "https://www.openstreetmap.org/?mlat=" + l.lat + "&mlon=" + l.lon + "#map=12/" + l.lat + "/" + l.lon;
+	a.target = "_blank"; a.rel = "noopener"; a.textContent = "ver en el mapa";
+	e.append(b, " · " + l.lat + ", " + l.lon + " · ", a);
+	$("lugares").replaceChildren();
+	actualizarRegion();
+}
+
+function actualizarRegion() {
+	const lat = parseFloat($("lat").value), lon = parseFloat($("lon").value);
+	if (isNaN(lat) || isNaN(lon)) return;
+	api("/api/region?" + new URLSearchParams({ pais: $("pais").value, lat, lon, estado: estadoMapa }))
+		.then(r => { if (r.region) $("region").value = r.region; }).catch(() => {});
+}
+
+function llenarRegiones() {
+	const p = E.paises[$("pais").value];
+	const s = $("region"); s.replaceChildren(opcion("", "Ninguna (solo documentos generales)"));
+	for (const r of p.regiones) s.appendChild(opcion(r, r + " (" + p.docs_region[r] + " documentos)"));
+}
+
+async function iniciar() {
+	E = await api("/api/estado");
+	const v = E.verificacion, lista = $("chequeos");
+	for (const r of v.resultados) {
+		const li = document.createElement("li");
+		const e = document.createElement("span"); e.className = "e " + r.estado; e.textContent = r.estado;
+		const d = document.createElement("span"); d.textContent = r.que + ": " + r.detalle;
+		if (r.arreglo) { const s = document.createElement("small"); s.textContent = "→ " + r.arreglo; d.appendChild(s); }
+		li.append(e, d); lista.appendChild(li);
+	}
+	const faltan = v.resultados.filter(r => r.estado === "FALTA").length, avisos = v.resultados.filter(r => r.estado === "AVISO").length;
+	$("resumen-equipo").textContent = faltan ? "Hay " + faltan + " problema(s) que arreglar antes de instalar (mira el detalle)."
+		: avisos ? "El equipo sirve. Hay " + avisos + " aviso(s) para revisar." : "Todo bien: el equipo sirve para el nodo.";
+	if (faltan) $("det-equipo").open = true;
+
+	for (const [cc, p] of Object.entries(E.paises)) $("pais").appendChild(opcion(cc, p.nombre));
+	llenarRegiones();
+	for (const c of E.contenido) {
+		const l = document.createElement("label"); l.className = "opcion";
+		const i = document.createElement("input"); i.type = "checkbox"; i.value = c.id; i.dataset.gb = c.gb; i.checked = c.base || c.gb < 15 && E.disco_libre_gb > 40;
+		const t = document.createElement("span"); t.textContent = c.titulo;
+		const s = document.createElement("small"); s.textContent = c.texto; t.appendChild(s);
+		const g = document.createElement("span"); g.className = "gb"; g.textContent = c.gb + " GB";
+		l.append(i, t, g); $("contenido").appendChild(l);
+	}
+	$("wifi_if").value = E.wifi_if || "";
+	$("bind_lan").value = E.ip_lan || "";
+	document.querySelectorAll("input, select").forEach(x => x.addEventListener("input", calcular));
+	$("pais").addEventListener("change", () => { llenarRegiones(); actualizarRegion(); });
+	$("lat").addEventListener("change", actualizarRegion); $("lon").addEventListener("change", actualizarRegion);
+	calcular();
+}
+
+$("btn-lugar").addEventListener("click", buscarLugar);
+$("busca-lugar").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); buscarLugar(); } });
+async function buscarLugar() {
+	const q = $("busca-lugar").value.trim(); if (!q) return;
+	const ul = $("lugares"); ul.textContent = "Buscando…";
+	try {
+		const r = await api("/api/lugar?" + new URLSearchParams({ q, pais: $("pais").value }));
+		ul.replaceChildren();
+		if (!r.length) { ul.textContent = "No se encontró. Prueba con otro nombre o escribe las coordenadas a mano."; return; }
+		for (const l of r) {
+			const li = document.createElement("li"), b = document.createElement("button");
+			b.type = "button"; b.textContent = l.nombre;
+			const s = document.createElement("small"); s.textContent = l.detalle; b.appendChild(s);
+			b.addEventListener("click", () => elegirLugar(l));
+			li.appendChild(b); ul.appendChild(li);
+		}
+	} catch (e) { ul.textContent = e.message; }
+}
+
+$("guardar").addEventListener("click", async () => {
+	const datos = {
+		pais: $("pais").value, lugar: $("lugar").value, lat: $("lat").value, lon: $("lon").value,
+		radio_km: $("radio").value, region: $("region").value,
+		contenido: [...document.querySelectorAll("#contenido input:checked")].map(c => c.value),
+		ssid: $("ssid").value, wifi_if: $("wifi_if").value, bind_lan: $("bind_lan").value, puerto_lan: $("puerto_lan").value,
+	};
+	$("errores").textContent = ""; $("guardar").disabled = true;
+	try {
+		const r = await api("/api/guardar", { method: "POST", body: JSON.stringify(datos) });
+		$("guardar").hidden = true; $("final").hidden = false;
+		const dl = $("resumen");
+		const filas = [["Lugar", r.conf.LUGAR + " (" + r.conf.LAT + ", " + r.conf.LON + ")"], ["Mapa con calles", r.conf.RADIO_KM + " km"],
+			["Región", r.conf.REGION || "ninguna"], ["Contenido", r.conf.ZIMS], ["Wi-Fi de emergencia", r.conf.SSID + " (" + r.conf.WIFI_IF + ")"]];
+		for (const [k, v] of filas) { const dt = document.createElement("dt"), dd = document.createElement("dd"); dt.textContent = k; dd.textContent = v; dl.append(dt, dd); }
+	} catch (e) {
+		$("errores").textContent = (e.datos && e.datos.errores ? e.datos.errores.join(" ") : e.message);
+		$("guardar").disabled = false;
+	}
+});
+
+iniciar().catch(e => { $("resumen-equipo").textContent = "No se pudo cargar el asistente: " + e.message; });
+</script>
+</body>
+</html>

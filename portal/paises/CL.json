@@ -1,0 +1,61 @@
+{
+ "pais": "Chile",
+ "bbox": [-76.5, -56.1, -66.3, -17.4],
+ "fuente": "Recomendaciones generales de SENAPRED, MINSAL y Bomberos de Chile. Ante instrucciones de la autoridad, sigue siempre a la autoridad.",
+ "telefonos": [
+  {"numero": "131", "nombre": "Ambulancia (SAMU)"},
+  {"numero": "132", "nombre": "Bomberos"},
+  {"numero": "133", "nombre": "Carabineros"},
+  {"numero": "134", "nombre": "PDI"},
+  {"numero": "137", "nombre": "Emergencias marítimas (Armada)"},
+  {"numero": "138", "nombre": "Rescate aéreo (FACh)"}
+ ],
+ "situaciones": [
+  {
+   "titulo": "Sismo",
+   "pasos": [
+    "Agáchate, cúbrete y afírmate: bajo una mesa firme o junto a un muro interior, lejos de ventanas.",
+    "No corras hacia afuera durante el movimiento ni uses ascensores.",
+    "Al terminar, revisa si hay heridos, olor a gas o daños. Si hueles gas, cierra la llave y no enciendas nada.",
+    "Ten zapatos y linterna a mano: puede haber vidrios y réplicas."
+   ]
+  },
+  {
+   "titulo": "Tsunami (zona costera)",
+   "pasos": [
+    "Si el sismo es tan fuerte que cuesta mantenerse en pie y estás cerca de la costa, evacúa de inmediato, sin esperar alarma ni aviso oficial.",
+    "Ve a pie hacia zonas altas (sobre 30 metros) o tierra adentro, por las vías de evacuación señalizadas.",
+    "No vuelvas a la costa hasta que la autoridad lo indique: puede haber varias olas durante horas.",
+    "Si el mar se retira de forma anormal, es señal de tsunami: aléjate de inmediato."
+   ]
+  },
+  {
+   "titulo": "Incendio forestal",
+   "pasos": [
+    "Avisa al 132 indicando el lugar lo más exacto posible.",
+    "Si te ordenan evacuar, hazlo temprano y por la ruta indicada; no esperes a ver el fuego.",
+    "Cierra puertas y ventanas, saca combustibles cerca de la casa y moja los alrededores solo si es seguro.",
+    "El humo mata antes que el fuego: protégete la nariz y boca con un paño húmedo y mantente agachado."
+   ]
+  },
+  {
+   "titulo": "Corte de luz prolongado",
+   "pasos": [
+    "Usa linternas; evita velas, y si las usas, nunca sin supervisión.",
+    "Desenchufa equipos sensibles para protegerlos cuando vuelva la energía.",
+    "Abre el refrigerador lo menos posible para conservar el frío.",
+    "Nunca uses generadores, braseros ni cocinas a gas dentro de espacios cerrados (monóxido de carbono)."
+   ]
+  },
+  {
+   "titulo": "Kit de emergencia",
+   "pasos": [
+    "Agua: al menos 4 litros por persona por día, para 3 días.",
+    "Alimentos no perecibles, abrelatas y comida para mascotas.",
+    "Linterna, radio a pilas, pilas de repuesto y cargador portátil.",
+    "Botiquín, medicamentos de uso diario y copia de recetas.",
+    "Documentos importantes, dinero en efectivo, silbato y ropa de abrigo."
+   ]
+  }
+ ]
+}

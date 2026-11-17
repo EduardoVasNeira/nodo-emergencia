@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emergencia</title>
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<div class="envoltura">
+	<a class="volver" href="/">← Inicio</a>
+	<h1>Emergencia</h1>
+	<h2>Teléfonos</h2>
+	<p class="mas-fonos">Toca un número para llamar.</p>
+	<div class="fonos" id="fonos"></div>
+	<h2>Qué hacer</h2>
+	<div id="situaciones"></div>
+	<footer id="fuente"></footer>
+</div>
+<script>
+const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+fetch("/config.json").then(r => r.json()).catch(() => ({ pais: "CL" }))
+	.then(c => fetch("/paises/" + encodeURIComponent(c.pais || "CL") + ".json"))
+	.then(r => r.json())
+	.then(d => {
+		document.getElementById("fonos").innerHTML = d.telefonos.map(t =>
+			`<a class="fono" href="tel:${esc(t.numero.replace(/\s/g, ""))}"><svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-phone"/></svg><div><b>${esc(t.numero)}</b><span>${esc(t.nombre)}</span></div></a>`).join("");
+		document.getElementById("situaciones").innerHTML = d.situaciones.map((s, i) =>
+			`<details${i === 0 ? " open" : ""}><summary>${esc(s.titulo)}</summary><ul>${s.pasos.map(p => `<li>${esc(p)}</li>`).join("")}</ul></details>`).join("");
+		document.getElementById("fuente").textContent = d.fuente;
+	})
+	.catch(() => { document.getElementById("situaciones").textContent = "No se encontró la información de este país."; });
+</script>
+</body>
+</html>

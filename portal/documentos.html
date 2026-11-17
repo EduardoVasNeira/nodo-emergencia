@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentos oficiales</title>
+<link rel="stylesheet" href="/estilo.css">
+<style>
+	.grupo { margin-top: 22px; }
+	.grupo h2 { font-size: 1.15rem; margin: 0 0 8px; }
+	.docs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+	.docs a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; color: var(--fg); text-decoration: none; }
+	.docs a:hover { border-color: var(--azul); }
+	.docs .icono-svg { color: var(--azul); margin-right: 4px; }
+	.docs small { color: var(--muted); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="envoltura">
+	<p><a href="/">← Inicio</a></p>
+	<h1>Documentos oficiales</h1>
+	<div class="aviso">Planos de evacuación y guías de SENAPRED y otros organismos, guardados en este equipo.
+		Ante instrucciones de la autoridad, <strong>sigue siempre a la autoridad</strong>.</div>
+	<div id="lista"><p class="estado">Cargando…</p></div>
+</div>
+<script>
+fetch("/documentos/indice.json").then(r => r.json()).then(docs => {
+	const caja = document.getElementById("lista");
+	caja.textContent = "";
+	if (!docs.length) { caja.textContent = "Todavía no hay documentos descargados."; return; }
+	const grupos = new Map();
+	for (const d of docs) { if (!grupos.has(d.grupo)) grupos.set(d.grupo, []); grupos.get(d.grupo).push(d); }
+	for (const [g, ds] of grupos) {
+		const sec = document.createElement("section"); sec.className = "grupo";
+		const h = document.createElement("h2"); h.textContent = g; sec.appendChild(h);
+		const ul = document.createElement("ul"); ul.className = "docs";
+		for (const d of ds) {
+			const li = document.createElement("li");
+			const a = document.createElement("a");
+			a.href = "/documentos/" + encodeURIComponent(d.archivo);
+			const t = document.createElement("span");
+			t.innerHTML = '<svg class="icono-svg" aria-hidden="true"><use href="/iconos.svg#i-file-text"/></svg> ';
+			t.append(d.titulo);
+			const s = document.createElement("small"); s.textContent = d.mb + " MB";
+			a.append(t, s); li.appendChild(a); ul.appendChild(li);
+		}
+		sec.appendChild(ul); caja.appendChild(sec);
+	}
+}).catch(() => { document.getElementById("lista").textContent = "No se encontraron documentos."; });
+</script>
+</body>
+</html>

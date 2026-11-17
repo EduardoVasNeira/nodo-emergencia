@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa offline</title>
+<link rel="stylesheet" href="/vendor/maplibre-gl.css">
+<style>
+	html, body { margin: 0; height: 100%; background: #e9e7e1; font-family: system-ui, sans-serif; }
+	#mapa { position: absolute; inset: 0; }
+	.barra { position: absolute; top: 10px; left: 10px; z-index: 2; display: flex; gap: 8px; }
+	.barra a, .barra button { background: #fff; color: #1d1d1b; border: 1px solid #bbb; border-radius: 8px; padding: 8px 12px; font-size: 15px; text-decoration: none; cursor: pointer; }
+	#error { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; padding: 24px; text-align: center; background: #fff; color: #333; z-index: 3; }
+	#leyenda { position: absolute; left: 10px; bottom: 34px; z-index: 2; background: #fff; border: 1px solid #bbb; border-radius: 8px; font-size: 14px; max-width: calc(100vw - 20px); }
+	#leyenda summary { padding: 8px 12px; cursor: pointer; font-weight: 600; }
+	#leyenda label { display: flex; align-items: center; gap: 8px; padding: 4px 12px; cursor: pointer; }
+	#leyenda label:last-child { padding-bottom: 10px; }
+	#leyenda i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #888; flex: none; }
+	#leyenda small { color: #777; margin-left: auto; padding-left: 8px; }
+	.maplibregl-popup-content { font-size: 14px; line-height: 1.4; }
+	.maplibregl-popup-content b { display: block; font-size: 15px; }
+</style>
+</head>
+<body>
+<div id="mapa"></div>
+<div class="barra">
+	<a href="/">← Inicio</a>
+	<button id="centrar" type="button">Mi zona</button>
+</div>
+<details id="leyenda" hidden><summary>Lugares útiles</summary><div id="tipos"></div></details>
+<div id="error"></div>
+<script src="/vendor/maplibre-gl.js"></script>
+<script src="/vendor/pmtiles.js"></script>
+<script src="/vendor/basemaps.js"></script>
+<script>
+(async () => {
+	const fallo = (t) => { const e = document.getElementById("error"); e.textContent = t; e.style.display = "flex"; };
+	if (typeof maplibregl === "undefined") return fallo("No se cargó el visor de mapas.");
+	const c = await fetch("/config.json").then(r => r.json()).catch(() => ({ lat: -33.45, lon: -70.66, idioma: "es" }));
+
+	const protocolo = new pmtiles.Protocol();
+	maplibregl.addProtocol("pmtiles", protocolo.tile);
+	const base = location.origin;
+	const sabor = basemaps.namedFlavor("light");
+	const opciones = { lang: c.idioma || "es" };
+
+	// País (detalle general) debajo; región (calles) encima desde zoom 11.
+	const capasPais = basemaps.layers("pais", sabor, opciones);
+	const capasRegion = basemaps.layers("region", sabor, opciones)
+		.filter(l => l.type !== "background")
+		.map(l => ({ ...l, id: "r-" + l.id, minzoom: Math.max(l.minzoom || 0, 11) }));
+
+	const atrib = '<a href="https://openstreetmap.org/copyright">© OpenStreetMap</a> · <a href="https://protomaps.com">Protomaps</a>';
+	const mapa = new maplibregl.Map({
+		container: "mapa",
+		center: [c.lon, c.lat],
+		zoom: 10,
+		maxZoom: 18,
+		attributionControl: { compact: true },
+		style: {
+			version: 8,
+			glyphs: base + "/vendor/fonts/{fontstack}/{range}.pbf",
+			sprite: base + "/vendor/sprites/v4/light",
+			sources: {
+				pais: { type: "vector", url: "pmtiles://" + base + "/mapas/pais.pmtiles", attribution: atrib },
+				region: { type: "vector", url: "pmtiles://" + base + "/mapas/region.pmtiles" },
+			},
+			layers: [...capasPais, ...capasRegion],
+		},
+	});
+	mapa.addControl(new maplibregl.NavigationControl(), "top-right");
+	mapa.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
+	mapa.on("error", (e) => console.warn("mapa:", e && e.error && e.error.message));
+	document.getElementById("centrar").onclick = () => mapa.flyTo({ center: [c.lon, c.lat], zoom: 12 });
+
+	// Lugares útiles (OpenStreetMap): hospitales, bomberos, zonas de encuentro…
+	const TIPOS = [
+		["hospital", "Hospitales", "#d62828"],
+		["salud", "CESFAM y clínicas", "#f77f00"],
+		["bomberos", "Bomberos", "#7a0010"],
+		["policia", "Carabineros / PDI", "#1d4e89"],
+		["encuentro", "Puntos de encuentro / zona segura", "#2b9348"],
+		["albergue", "Albergues", "#7b2cbf"],
+		["farmacia", "Farmacias", "#2a9d8f"],
+		["agua", "Agua potable", "#00a6d6"],
+		["bencina", "Bencineras", "#6c757d"],
+	];
+	const nombreTipo = Object.fromEntries(TIPOS.map(([k, n]) => [k, n]));
+	let activos;
+	try { activos = JSON.parse(localStorage.getItem("mapa.tipos")); } catch (e) {}
+	if (!Array.isArray(activos)) activos = TIPOS.map(t => t[0]);
+	const filtro = () => ["in", ["get", "t"], ["literal", activos]];
+	const esc = (s) => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+
+	mapa.on("load", async () => {
+		const puntos = await fetch("/mapas/puntos.geojson").then(r => r.ok ? r.json() : null).catch(() => null);
+		if (!puntos) return;
+		const cuenta = {};
+		for (const f of puntos.features) cuenta[f.properties.t] = (cuenta[f.properties.t] || 0) + 1;
+		mapa.addSource("puntos", { type: "geojson", data: puntos });
+		const color = ["match", ["get", "t"], ...TIPOS.flatMap(([k, , col]) => [k, col]), "#333"];
+		mapa.addLayer({ id: "puntos", type: "circle", source: "puntos", filter: filtro(), paint: {
+			"circle-color": color, "circle-stroke-color": "#fff", "circle-stroke-width": 1.5,
+			"circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 3, 13, 6, 16, 9],
+		} });
+		mapa.addLayer({ id: "puntos-nombre", type: "symbol", source: "puntos", minzoom: 14, filter: filtro(), layout: {
+			"text-field": ["get", "n"], "text-font": ["Noto Sans Medium"], "text-size": 12,
+			"text-offset": [0, 1.1], "text-anchor": "top", "text-optional": true,
+		}, paint: { "text-color": color, "text-halo-color": "#fff", "text-halo-width": 1.5 } });
+
+		const caja = document.getElementById("tipos");
+		for (const [k, n, col] of TIPOS) {
+			if (!cuenta[k]) continue;
+			const l = document.createElement("label");
+			l.innerHTML = `<input type="checkbox" ${activos.includes(k) ? "checked" : ""}><i style="background:${col}"></i>${n}<small>${cuenta[k]}</small>`;
+			l.querySelector("input").onchange = (ev) => {
+				activos = ev.target.checked ? [...activos, k] : activos.filter(x => x !== k);
+				for (const id of ["puntos", "puntos-nombre"]) mapa.setFilter(id, filtro());
+				try { localStorage.setItem("mapa.tipos", JSON.stringify(activos)); } catch (e) {}
+			};
+			caja.appendChild(l);
+		}
+		document.getElementById("leyenda").hidden = false;
+
+		mapa.on("click", "puntos", (ev) => {
+			const p = ev.features[0].properties;
+			let h = `<b>${esc(p.n || nombreTipo[p.t])}</b>${esc(nombreTipo[p.t])}`;
+			if (p.dir) h += `<br>${esc(p.dir)}`;
+			if (p.tel) h += `<br>☎ <a href="tel:${esc(p.tel.split(";")[0].replace(/\s/g, ""))}">${esc(p.tel)}</a>`;
+			if (p.h) h += `<br>Horario: ${esc(p.h)}`;
+			if (p.emerg) h += `<br>Atiende urgencias`;
+			new maplibregl.Popup({ maxWidth: "260px" }).setLngLat(ev.features[0].geometry.coordinates).setHTML(h).addTo(mapa);
+		});
+		mapa.on("mouseenter", "puntos", () => mapa.getCanvas().style.cursor = "pointer");
+		mapa.on("mouseleave", "puntos", () => mapa.getCanvas().style.cursor = "");
+	});
+})();
+</script>
+</body>
+</html>

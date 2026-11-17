@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qué hacer</title>
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<div class="envoltura">
+	<p><a href="/">← Inicio</a> · <a href="/ficha">Todas las fichas</a></p>
+	<div class="aviso alerta">
+		Primeros auxilios básicos para orientarte, <strong>no reemplazan a un profesional</strong>.
+		Si es grave, llama a emergencias.
+	</div>
+	<div id="contenido"><p class="estado">Cargando…</p></div>
+</div>
+<script src="/fichas.js"></script>
+<script>
+(async () => {
+	const caja = document.getElementById("contenido");
+	let fichas;
+	try { fichas = await cargarFichas(); }
+	catch (e) { caja.replaceChildren(nodo("p", "estado", "No hay fichas para este país todavía.")); return; }
+
+	function mostrar() {
+		const id = decodeURIComponent(location.hash.slice(1));
+		const f = fichas.find(x => x.id === id);
+		if (f) {
+			document.title = f.titulo + " · Qué hacer";
+			caja.replaceChildren(dibujarFicha(f));
+			window.scrollTo(0, 0);
+			return;
+		}
+		document.title = "Qué hacer · Primeros auxilios";
+		const h = nodo("h1", null, "Qué hacer: primeros auxilios");
+		const ul = nodo("ul", "indice-fichas");
+		for (const x of [...fichas].sort((a, b) => a.titulo.localeCompare(b.titulo, "es"))) {
+			const li = nodo("li");
+			const a = nodo("a", null, x.titulo);
+			a.href = "#" + encodeURIComponent(x.id);
+			li.appendChild(a);
+			ul.appendChild(li);
+		}
+		caja.replaceChildren(h, ul);
+	}
+	window.addEventListener("hashchange", mostrar);
+	mostrar();
+})();
+</script>
+</body>
+</html>

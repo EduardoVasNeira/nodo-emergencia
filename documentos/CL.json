@@ -1,0 +1,1195 @@
+{
+ "_nota": "Documentos oficiales para guardar offline. 'general' se baja siempre; 'regiones' según REGION en emergencia.conf; \"centros\" (capital regional) sirve para elegir la región más cercana. Fuentes: BiblioGRD de SENAPRED (bibliogrd.senapred.gob.cl) y MINVU.",
+ "general": [
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Sismos",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8859/01_preparate_con_senapred_sismos_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Tsunami",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8892/02_preparate_con_senapred_tsunami_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Erupciones volcánicas",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8922/03_preparate_con_senapred_erupciones_volcanicas_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Incendios forestales",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8866/06_preparate_con_senapred_incendios_forestales_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Humo de incendios forestales",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8869/07_preparate_con_senapred_humo_incendios_forestales_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Incendios en casas y edificios",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8873/08_preparate_con_senapred_incendios_estructurales_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Invierno y temporales",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8879/10_preparate_con_senapred_invierno_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Prepárate (SENAPRED)",
+   "titulo": "Calor intenso o extremo",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/8912/20_preparate_con_senapred_calor_intenso_o_extremo_esp.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Familia preparada",
+   "titulo": "Manual Plan Familia Preparada (incluye kit de emergencia)",
+   "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6482/01_MANUAL%20PLAN%20FAMILIA%20PREPARADA.pdf?sequence=1&isAllowed=y"
+  },
+  {
+   "grupo": "Familia preparada",
+   "titulo": "Chile se prepara: el hogar ante incendios (MINVU)",
+   "url": "https://www.minvu.gob.cl/wp-content/uploads/2024/12/DIPTICO-chile-se-prepara-HOGAR.pdf"
+  }
+ ],
+ "regiones": {
+  "Arica y Parinacota": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Arica y Parinacota",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6768/PEmer_Region%20Arica.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6768/Anexo_Tsunami.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6768/Anexo_Volcanico.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6768/Anexo_Remocion%20en%20Masa.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Arica",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6565/PEmer_Arica.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Arica",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9179/PL_EVAC_TS_ARICA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Camarones",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9180/PL_EVAC_TS_CAMARONES.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcanes de Putre (Parinacota, Guallatiri)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9198/PL_EVAC_VN_PUTRE.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Camarones",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9216/PL_EVAC_RM_CAMARONES.pdf"
+   }
+  ],
+  "Tarapacá": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Tarapacá",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6776/PEmer_Region%20Tarapaca.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo sismo, tsunami y remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6776/Anexo_Sismo%20Tsunami%20Remocion%20en%20Masa.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo aluvional",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6776/Anexo_Aluvional.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6776/Anexo_Volcanico.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6776/Anexo_Incendio%20Forestal.pdf?sequence=6&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo corte masivo de agua potable",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6776/Anexo_Corte%20masivo%20de%20agua%20potable.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Iquique",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6810/PEmer_Iquique.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Iquique",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9085/PL_EVAC_TS_IQUIQUE.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Huara",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9096/PL_EVAC_TS_HUARA.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Iquique",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9207/PL_EVAC_RM_IQUIQUE.pdf"
+   }
+  ],
+  "Antofagasta": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Antofagasta",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6777/PEmer%20Region%20Antofagasta.pdf?sequence=34&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6777/Anexo_Tsunamis.pdf?sequence=36&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6777/Anexo_Volcanico.pdf?sequence=37&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6777/Anexo_Remocion%20en%20Masa.pdf?sequence=35&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo inundación por crecida de ríos o embalses",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6777/Anexo_Inundacion%20por%20crecida%20de%20rios%20o%20embalses.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Antofagasta",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6616/PEmer_Antofagasta.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Antofagasta",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9107/PL_EVAC_TS_ANTOFAGASTA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Mejillones",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9118/PL_EVAC_TS_MEJILLONES.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Tocopilla",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9140/PL_EVAC_TS_TOCOPILLA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Taltal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9129/PL_EVAC_TS_TALTAL.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Antofagasta",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9217/PL_EVAC_RM_ANTOFAGASTA.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Mejillones",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9218/PL_EVAC_RM_MEJILLONES.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Tocopilla",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9220/PL_EVAC_RM_TOCOPILLA.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Taltal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9219/PL_EVAC_RM_TALTAL.pdf"
+   }
+  ],
+  "Atacama": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Atacama",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6778/PEmer_Region%20Atacama.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo sismo y tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6778/Anexo_Sismo%20Tsunami.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6778/Anexo_Remocion%20en%20Masa.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Copiapó",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6620/PEmer_Copiapo.pdf?sequence=7&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Caldera",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9162/PL_EVAC_TS_CALDERA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Copiapó",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9151/PL_EVAC_TS_COPIAPO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Chañaral",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9173/PL_EVAC_TS_CHANARAL.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Huasco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9087/PL_EVAC_TS_HUASCO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Freirina",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9086/PL_EVAC_TS_FREIRINA.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Copiapó",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9221/PL_EVAC_RM_COPIAPO.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Tierra Amarilla",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9222/PL_EVAC_RM_TIERRA_AMARILLA.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Chañaral",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9223/PL_EVAC_RM_CHANARAL.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Diego de Almagro",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9224/PL_EVAC_RM_DIEGO_DE_ALMAGRO.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Alto del Carmen",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9208/PL_EVAC_RM_ALTO_DEL_CARMEN.pdf"
+   }
+  ],
+  "Coquimbo": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Coquimbo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6779/PEmer_Region%20Coquimbo.pdf?sequence=20&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6779/Anexo_Tsunami.pdf?sequence=23&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6779/Anexo_Remocion%20en%20Masa.pdf?sequence=24&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6779/Anexo_Incendio%20Forestal.pdf?sequence=22&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo calor extremo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6779/Anexo_%20Calor%20Extremo.pdf?sequence=37&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia La Serena",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6905/PEmer_La%20Serena.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Coquimbo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6578/PEmer_Coquimbo.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "La Serena",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9088/PL_EVAC_TS_LA_SERENA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Coquimbo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9089/PL_EVAC_TS_COQUIMBO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Los Vilos",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9092/PL_EVAC_TS_LOS_VILOS.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "La Higuera",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9090/PL_EVAC_TS_LA_HIGUERA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Canela",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9091/PL_EVAC_TS_CANELA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Ovalle",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9093/PL_EVAC_TS_OVALLE.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación La Serena",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9209/PL_EVAC_RM_LA_SERENA.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Coquimbo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9210/PL_EVAC_RM_COQUIMBO.pdf"
+   }
+  ],
+  "Valparaíso": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Valparaíso",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6780/PEmer_Region%20Valparaiso.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo sismo y tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6780/Anexo_Sismo%20Tsunami.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6780/Anexo_Incendio%20Forestal.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Valparaíso",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6560/PEmer_Valparaiso.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Viña del Mar",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6844/PEmer_Vi%c3%b1a%20del%20Mar.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Valparaíso",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9094/PL_EVAC_TS_VALPARAISO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Viña del Mar",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9101/PL_EVAC_TS_VINA_DEL_MAR.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Concón",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9097/PL_EVAC_TS_CONCON.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Quintero",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9100/PL_EVAC_TS_QUINTERO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Puchuncaví",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9099/PL_EVAC_TS_PUCHUNCAVI.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "San Antonio",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9108/PL_EVAC_TS_SAN_ANTONIO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Cartagena",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9110/PL_EVAC_TS_CARTAGENA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "El Quisco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9111/PL_EVAC_TS_EL_QUISCO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Algarrobo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9109/PL_EVAC_TS_ALGARROBO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Isla de Pascua",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9102/PL_EVAC_TS_ISLA_DE_PASCUA.pdf"
+   }
+  ],
+  "Metropolitana": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Metropolitana",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6781/PEmer_Region%20Metropolitana.pdf?sequence=19&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo sismo Falla San Ramón",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6781/Anexo_Sismo%20Falla%20San%20Ramon.pdf?sequence=16&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6781/Anexo_Volc%c3%a1nico.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6781/Anexo_Incendio%20Forestal.pdf?sequence=25&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo materiales peligrosos",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6781/Anexo_Materiales%20Peligrosos.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo búsqueda y rescate en montaña",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6781/Anexo_Busqueda%20y%20rescate%20de%20monta%c3%b1a.pdf?sequence=31&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Provincial de Emergencia Cordillera",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6737/PEmer_Provincia%20Cordillera.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Santiago",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6838/PEmer_Santiago.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Puente Alto",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6537/PEmer_Puente%20Alto.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Maipú",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6843/PEmer_Maipu.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia San José de Maipo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6521/Pemer_%20San%20Jose%20de%20Maipo.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Lo Barnechea",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6533/PEmer_Lo%20Barnechea.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación San José de Maipo",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9215/PL_EVAC_RM_SAN_JOSE_DE_MAIPO.pdf"
+   }
+  ],
+  "O'Higgins": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia O'Higgins",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6782/PEmer_Region%20Ohiggins.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6782/Anexo_Tsunami.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6782/Anexo_Volcanico.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6782/Anexo_Incendio%20Forestal.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6782/Anexo_Remocion%20en%20Masa.pdf?sequence=6&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Rancagua",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6601/PEmer_Rancagua.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Pichilemu",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9115/PL_EVAC_TS_PICHILEMU.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Navidad",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9117/PL_EVAC_TS_NAVIDAD.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Litueche",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9116/PL_EVAC_TS_LITUECHE.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Paredones",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9119/PL_EVAC_TS_PAREDONES.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Remoción en masa: plano de evacuación Malloa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9211/PL_EVAC_RM_MALLOA.pdf?sequence=4&isAllowed=y"
+   }
+  ],
+  "Maule": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Maule",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6783/PEmer_Region%20Maule.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6783/Anexo_Tsunami.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6783/Anexo_Volcanico.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6783/Anexo_Incendio%20Forestal.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo hidrometeorológico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6783/Anexo_Hidrometeorologico.pdf?sequence=6&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Talca",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6628/PEmer_Talca.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Constitución",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9120/PL_EVAC_TS_CONSTITUCION.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Pelluhue",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9123/PL_EVAC_TS_PELLUHUE.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Chanco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9122/PL_EVAC_TS_CHANCO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Licantén",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9124/PL_EVAC_TS_LICANTEN.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "San Clemente (volcanes Descabezado Grande y Quizapu, entre otros)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9193/PL_EVAC_VN_SAN_CLEMENTE.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Curicó (volcán Planchón-Peteroa)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9199/PL_EVAC_VN_CURICO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Molina",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9200/PL_EVAC_VN_MOLINA.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Romeral (volcán Planchón-Peteroa)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9201/PL_EVAC_VN_ROMERAL.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Río Claro",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9182/PL_EVAC_VN_RIO_CLARO.pdf"
+   }
+  ],
+  "Ñuble": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Ñuble",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6769/Pemer_Region%20%c3%91uble.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6769/Anexo_Volcanico.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6769/Anexo_Tsunami.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6769/Anexo_Incendio%20Forestal.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Chillán",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6967/PEmer_Chillan.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Cobquecura",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9141/PL_EVAC_TS_COBQUECURA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Coelemu",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9142/PL_EVAC_TS_COELEMU.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Trehuaco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9143/PL_EVAC_TS_TREGUACO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Nevados de Chillán (comuna de Pinto)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9205/PL_EVAC_VN_PINTO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Nevados de Chillán (comuna de Coihueco)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9204/PL_EVAC_VN_COIHUECO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "San Fabián",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9183/PL_EVAC_VN_SAN_FABIAN.pdf"
+   }
+  ],
+  "Biobío": [
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "San Pedro de la Paz",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9131/PL_EVAC_TS_SAN_PEDRO_DE_LA_PAZ.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Concepción",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9126/PL_EVAC_TS_CONCEPCION.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Talcahuano",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9132/PL_EVAC_TS_TALCAHUANO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Hualpén",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9134/PL_EVAC_TS_HUALPEN.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Penco y Lirquén",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9130/PL_EVAC_TS_PENCO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Tomé y Dichato",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9133/PL_EVAC_TS_TOME.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Coronel",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9127/PL_EVAC_TS_CORONEL.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Lota",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9128/PL_EVAC_TS_LOTA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Arauco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9136/PL_EVAC_TS_ARAUCO.pdf"
+   },
+   {
+    "grupo": "Volcanes: planos de evacuación",
+    "titulo": "Volcán Antuco (comuna de Antuco)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9202/PL_EVAC_VN_ANTUCO.pdf"
+   },
+   {
+    "grupo": "Volcanes: planos de evacuación",
+    "titulo": "Nevados de Chillán (comuna de Pinto)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9205/PL_EVAC_VN_PINTO.pdf"
+   },
+   {
+    "grupo": "Incendios forestales",
+    "titulo": "Guía de preparación ante incendio forestal, Biobío",
+    "url": "https://www.paiscircular.cl/wp-content/uploads/2023/12/Guia-de-preparacion-ante-Incendio-Forestal-BioBio_v1.0-1.pdf"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Biobío",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6770/PEmer_Region%20Biobio.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6770/Anexo_Tsunami.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6770/Anexo_Volcanico.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6770/Anexo_Incendio%20Forestal.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia San Pedro de la Paz",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6912/PEmer_San%20Pedro%20de%20la%20Paz.pdf?sequence=1&isAllowed=y"
+   }
+  ],
+  "La Araucanía": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia La Araucanía",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6771/PEmer_Region%20Araucania.pdf?sequence=22&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcán Villarrica",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6771/Anexo_Volcan_Villarica.pdf?sequence=24&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcán Llaima",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6771/Anexo_Volcanico_Llaima.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendios forestales",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6771/Anexo_Incendios%20Forestales.pdf?sequence=23&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6771/Anexo_Tsunami.pdf?sequence=25&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Temuco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6557/PEmer_Temuco.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Saavedra (Puerto Saavedra)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9145/PL_EVAC_TS_SAAVEDRA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Toltén",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9147/PL_EVAC_TS_TOLTEN.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Villarrica (comuna de Pucón)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9186/PL_EVAC_VN_PUCON.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Villarrica (comuna de Villarrica)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9188/PL_EVAC_VN_VILLARRICA.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Cunco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9184/PL_EVAC_VN_CUNCO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Llaima (comuna de Melipeuco)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9185/PL_EVAC_VN_MELIPEUCO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Llaima (comuna de Vilcún)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9187/PL_EVAC_VN_VILCUN.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Curacautín",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9189/PL_EVAC_VN_CURACAUTIN.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Lonquimay",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9190/PL_EVAC_VN_LONQUIMAY.pdf"
+   }
+  ],
+  "Los Ríos": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Los Ríos",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6772/PEmer_Region%20Los%20Rios.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6772/Anexo_Tsunami.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcán Villarrica",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6772/Anexo_Volcanico_Villarrica.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcán Mocho-Choshuenco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6772/Anexo_Volcanico_Mocho%20Choshuenco.pdf?sequence=6&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo Cordón Caulle",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6772/Anexo_Volcanico_Cordon%20Caulle.pdf?sequence=7&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6772/Anexo_Incendio%20Forestal.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Valdivia",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6947/PEmer_Valdivia.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Valdivia",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9175/PL_EVAC_TS_VALDIVIA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Corral",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9176/PL_EVAC_TS_CORRAL.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Mariquina",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9177/PL_EVAC_TS_MARIQUINA.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "La Unión",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9178/PL_EVAC_TS_LA_UNION.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Panguipulli",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9195/PL_EVAC_VN_PANGUIPULLI.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Lago Ranco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9196/PL_EVAC_VN_LAGO_RANCO.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Río Bueno",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9197/PL_EVAC_VN_RIO_BUENO.pdf"
+   }
+  ],
+  "Los Lagos": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Los Lagos",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6773/PEmer_Region%20Los%20Lagos.pdf?sequence=19&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcánico",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6773/Anexo_Volcanico.pdf?sequence=22&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6773/Anexo_Tsunami.pdf?sequence=21&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo remoción en masa",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6773/Anexo_Remocion%20en%20masa.pdf?sequence=31&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6773/Anexo_Incendio%20Forestal.pdf?sequence=20&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Puerto Montt",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6588/PEmer_Puerto%20Montt.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Puerto Montt",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9148/PL_EVAC_TS_PUERTO_MONTT.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Calbuco",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9149/PL_EVAC_TS_CALBUCO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Ancud",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9154/PL_EVAC_TS_ANCUD.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Castro",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9153/PL_EVAC_TS_CASTRO.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Quellón",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9159/PL_EVAC_TS_QUELLON.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Calbuco (comuna de Puerto Varas)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9191/PL_EVAC_VN_PUERTO%20VARAS_CALBUCO.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Osorno (comuna de Puerto Varas)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9191/PL_EVAC_VN_PUERTO_VARAS_OSORNO.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Calbuco (comuna de Puerto Montt)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9247/PUERTO%20MONTT%20-%20Volc%c3%a1n%20Calbuco.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Volcán Osorno (comuna de Puerto Octay)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9192/PL_EVAC_VN_PUERTO_OCTAY.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Chaitén",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9194/PL_EVAC_VN_CHAITEN.pdf"
+   }
+  ],
+  "Aysén": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Aysén",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6774/PEmer_Region%20Aysen.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6774/Anexo_Tsunami.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcán Hudson",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6774/Anexo_Volcanico_Hudson.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo volcán Melimoyu",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6774/Anexo_Volcanico_Melimoyu.pdf?sequence=3&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Coyhaique",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/7118/PEmer_Coyhaique.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Aysén (Puerto Aysén y Puerto Chacabuco)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9166/PL_EVAC_TS_AISEN.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Guaitecas (Melinka)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9167/PL_EVAC_TS_GUAITECAS.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Tortel",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9168/PL_EVAC_TS_TORTEL.pdf"
+   },
+   {
+    "grupo": "Volcán: planos de evacuación",
+    "titulo": "Río Ibáñez",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9258/PL_EVAC_VN_RIO_IBA%c3%91EZ.pdf?sequence=3&isAllowed=y"
+   }
+  ],
+  "Magallanes": [
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional de Emergencia Magallanes",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6775/PEmer_Region%20Magallanes.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo tsunami",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6775/Anexo_Tsunami.pdf?sequence=2&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo incendio forestal",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6775/Anexo_Incendio%20Forestal.pdf?sequence=4&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Regional: anexo desborde río Las Minas",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/6775/Anexo_Desborde%20Rio%20Las%20Minas.pdf?sequence=5&isAllowed=y"
+   },
+   {
+    "grupo": "Planes de emergencia",
+    "titulo": "Plan Comunal de Emergencia Punta Arenas",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/7055/PEmer_Punta%20Arenas.pdf?sequence=1&isAllowed=y"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Punta Arenas",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9169/PL_EVAC_TS_PUNTA_ARENAS.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Natales",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9174/PL_EVAC_TS_NATALES.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Porvenir",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9171/PL_EVAC_TS_PORVENIR.pdf"
+   },
+   {
+    "grupo": "Tsunami: planos de evacuación",
+    "titulo": "Cabo de Hornos (Puerto Williams)",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9170/PL_EVAC_TS_CABO_DE_HORNOS.pdf"
+   },
+   {
+    "grupo": "Otros riesgos",
+    "titulo": "Inundación: plano de evacuación Punta Arenas",
+    "url": "https://bibliogrd.senapred.gob.cl/bitstream/handle/1671/9226/PL_EVAC_IN_PUNTA_ARENAS.pdf"
+   }
+  ]
+ },
+ "centros": {
+  "Arica y Parinacota": [
+   -18.48,
+   -70.31
+  ],
+  "Tarapacá": [
+   -20.21,
+   -70.15
+  ],
+  "Antofagasta": [
+   -23.65,
+   -70.4
+  ],
+  "Atacama": [
+   -27.37,
+   -70.33
+  ],
+  "Coquimbo": [
+   -29.9,
+   -71.25
+  ],
+  "Valparaíso": [
+   -33.05,
+   -71.62
+  ],
+  "Metropolitana": [
+   -33.45,
+   -70.66
+  ],
+  "O'Higgins": [
+   -34.17,
+   -70.74
+  ],
+  "Maule": [
+   -35.43,
+   -71.66
+  ],
+  "Ñuble": [
+   -36.61,
+   -72.1
+  ],
+  "Biobío": [
+   -36.83,
+   -73.05
+  ],
+  "La Araucanía": [
+   -38.74,
+   -72.6
+  ],
+  "Los Ríos": [
+   -39.81,
+   -73.25
+  ],
+  "Los Lagos": [
+   -41.47,
+   -72.94
+  ],
+  "Aysén": [
+   -45.57,
+   -72.07
+  ],
+  "Magallanes": [
+   -53.16,
+   -70.91
+  ]
+ }
+}
