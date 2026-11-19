@@ -14,6 +14,8 @@ Chile (`CL`) como modelo:
 2. **`portal/fichas/<PAÍS>.json`**: fichas de primeros auxilios. Cada ficha lleva `tambien` (cómo lo diría la
    gente, para el buscador), `urgente_si`, `pasos`, `no_hacer`, `llamar` y `fuentes`. Muchas fichas sirven
    entre países: copia las de Chile y cambia los teléfonos y las fuentes por las de tu país.
+   Arriba del archivo van `revision` (`fecha`, `por`, `profesional`: true solo si lo revisó un profesional de la
+   salud; una ficha puede tener su propia `revision`) y `sin_senal` (qué hacer si no se puede llamar).
 3. **`documentos/<PAÍS>.json`**: PDFs oficiales para guardar. `general` se baja siempre; `regiones` según la
    región elegida; `centros` da la capital de cada región (lat, lon) para que el asistente elija la más cercana.
 
@@ -23,6 +25,8 @@ Chile (`CL`) como modelo:
   Cada ficha cita su fuente con enlace.
 - **No inventes pasos.** Si las fuentes no coinciden, usa la del país y explícalo en `nota`.
 - **Nada de dosis de medicamentos.**
+- Si eres profesional de la salud y revisaste fichas, dilo en el issue o PR: se marca `profesional: true` con
+  tu fecha de revisión.
 - Lenguaje simple, frases cortas, en segunda persona ("Lava la zona con agua y jabón").
 - Antes de agregar un PDF, verifica que la URL descargue un PDF real (`curl -sL URL | head -c4` debe dar `%PDF`)
   y que pese menos de 100 MB.

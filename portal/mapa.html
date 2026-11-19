@@ -17,6 +17,8 @@
 	#leyenda label:last-child { padding-bottom: 10px; }
 	#leyenda i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #888; flex: none; }
 	#leyenda small { color: #777; margin-left: auto; padding-left: 8px; }
+	#aviso { position: absolute; top: 56px; left: 10px; right: 10px; max-width: 420px; z-index: 2; background: rgba(255,255,255,.92); border: 1px solid #bbb; border-radius: 8px; padding: 6px 10px; font-size: 13px; line-height: 1.35; color: #333; }
+	#aviso button { float: right; border: 0; background: none; font-size: 18px; line-height: 1; padding: 0 0 0 8px; cursor: pointer; color: #555; }
 	.maplibregl-popup-content { font-size: 14px; line-height: 1.4; }
 	.maplibregl-popup-content b { display: block; font-size: 15px; }
 </style>
@@ -27,6 +29,9 @@
 	<a href="/">← Inicio</a>
 	<button id="centrar" type="button">Mi zona</button>
 </div>
+<div id="aviso" role="note"><button type="button" aria-label="Cerrar aviso" onclick="this.parentNode.remove()">×</button>
+	Mapa de referencia, sin datos en tiempo real: no muestra calles cortadas ni si un lugar está abierto o dañado.
+	Sigue siempre las instrucciones de SENAPRED y de la autoridad.<span id="fecha-datos"></span></div>
 <details id="leyenda" hidden><summary>Lugares útiles</summary><div id="tipos"></div></details>
 <div id="error"></div>
 <script src="/vendor/maplibre-gl.js"></script>
@@ -93,7 +98,11 @@
 	const esc = (s) => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
 
 	mapa.on("load", async () => {
-		const puntos = await fetch("/mapas/puntos.geojson").then(r => r.ok ? r.json() : null).catch(() => null);
+		const resp = await fetch("/mapas/puntos.geojson").catch(() => null);
+		const puntos = resp && resp.ok ? await resp.json().catch(() => null) : null;
+		const modif = resp && resp.headers.get("Last-Modified");
+		if (modif) document.getElementById("fecha-datos").textContent =
+			" Lugares de OpenStreetMap al " + new Date(modif).toLocaleDateString("es-CL") + ".";
 		if (!puntos) return;
 		const cuenta = {};
 		for (const f of puntos.features) cuenta[f.properties.t] = (cuenta[f.properties.t] || 0) + 1;

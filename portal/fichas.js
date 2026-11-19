@@ -6,7 +6,19 @@ async function cargarFichas() {
 	const c = await fetch("/config.json").then(r => r.json()).catch(() => ({}));
 	const r = await fetch("/fichas/" + (c.pais || "CL") + ".json");
 	if (!r.ok) throw new Error("sin fichas");
-	return (await r.json()).fichas || [];
+	const d = await r.json();
+	cargarFichas.meta = d;          // revisión y "sin señal" del país
+	return d.fichas || [];
+}
+
+// "Tsunami (zona costera)" -> "tsunami-zona-costera" (igual que slug() en indexar.py).
+function slug(t) {
+	return t.toLowerCase().normalize("NFD").replace(/\p{Mn}/gu, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function fechaLocal(iso) {
+	const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+	return m ? m[3] + "-" + m[2] + "-" + m[1] : iso;
 }
 
 function nodo(tag, clase, texto) {
@@ -50,6 +62,8 @@ function bloqueLlamar(texto) {
 		a.href = "tel:" + m.replace(/ /g, "");
 		caja.appendChild(a);
 	}
+	const sinSenal = (cargarFichas.meta || {}).sin_senal;
+	if (sinSenal) caja.appendChild(nodo("p", "sin-senal", "Si no puedes llamar: " + sinSenal));
 	return caja;
 }
 
@@ -81,5 +95,24 @@ function dibujarFicha(f) {
 		});
 		art.appendChild(p);
 	}
+	const rev = f.revision || (cargarFichas.meta || {}).revision;
+	if (rev && rev.fecha) {
+		art.appendChild(nodo("p", "fuente", "Revisada el " + fechaLocal(rev.fecha) + (rev.por ? " por " + rev.por : "") + "." +
+			(rev.profesional ? "" : " Todavía no la revisa un profesional de la salud.")));
+	}
+	return art;
+}
+
+// Situación de emergencia del país (portal/paises/<PAIS>.json → "situaciones"): sismo, tsunami…
+function dibujarSituacion(s) {
+	const art = nodo("article", "ficha");
+	art.appendChild(nodo("div", "etiqueta", "Qué hacer"));
+	art.appendChild(nodo("h2", null, s.titulo));
+	art.appendChild(lista("ol", s.pasos));
+	const p = nodo("p", "fuente");
+	const a = nodo("a", null, "Ver todas las situaciones y teléfonos");
+	a.href = "/emergencia#" + slug(s.titulo);
+	p.appendChild(a);
+	art.appendChild(p);
 	return art;
 }

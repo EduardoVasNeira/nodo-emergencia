@@ -49,18 +49,51 @@
 		r = { resultados: [] };
 	}
 	const lista = document.getElementById("resultados");
+	const pais = (await fetch("/config.json").then(x => x.json()).catch(() => ({}))).pais || "CL";
+	const datosPais = await fetch("/paises/" + pais + ".json").then(x => x.json()).catch(() => ({}));
 	if (r.resultados.length) estado.textContent = "Lo que más se relaciona con tu pregunta:";
-	// Si lo primero es una ficha "qué hacer" revisada, se muestra completa arriba.
-	if (r.resultados.length && r.resultados[0].ficha) {
+	// Si lo primero es una ficha "qué hacer" (o una situación: sismo, tsunami…) y el buscador está
+	// seguro, se muestra completa arriba.
+	const primero = r.resultados[0];
+	if (primero && r.confianza === "alta") {
 		try {
-			const id = decodeURIComponent(r.resultados[0].url.split("#")[1] || "");
-			const f = (await cargarFichas()).find(x => x.id === id);
-			if (f) {
-				document.getElementById("ficha").replaceChildren(dibujarFicha(f));
+			let caja = null;
+			if (primero.ficha) {
+				const id = decodeURIComponent(primero.url.split("#")[1] || "");
+				const f = (await cargarFichas()).find(x => x.id === id);
+				if (f) caja = dibujarFicha(f);
+			} else {
+				const id = primero.url.split("#")[1] || "";
+				const s = (datosPais.situaciones || []).find(x => slug(x.titulo) === id);
+				if (s) caja = dibujarSituacion(s);
+			}
+			if (caja) {
+				document.getElementById("ficha").replaceChildren(caja);
 				estado.textContent = "Más información sobre tu pregunta:";
 				r.resultados.shift();
 			}
 		} catch (e) { /* sin fichas: queda como resultado normal */ }
+	}
+	if (r.confianza === "baja") {
+		const aviso = document.getElementById("ficha");
+		const d = document.createElement("div");
+		d.className = "aviso alerta";
+		const b = document.createElement("strong");
+		b.textContent = "No encontré una respuesta clara para tu pregunta.";
+		const enlace = document.createElement("a");
+		enlace.href = "/ficha"; enlace.textContent = "la lista de fichas";
+		d.append(b, " Prueba con otras palabras (por ejemplo, qué pasó y en qué parte del cuerpo) o revisa ",
+			enlace, ". Si es grave, busca ayuda presencial: centro de salud, Bomberos o Carabineros.");
+		aviso.replaceChildren(d);
+		estado.textContent = "Lo más parecido que encontré (puede no servirte):";
+	}
+	// Los artículos de la biblioteca explican, pero no son instrucciones (y pueden traer dosis).
+	if (r.resultados.some(x => !x.ficha && x.url.startsWith("/wiki"))) {
+		const n = document.createElement("p");
+		n.className = "nota-biblioteca";
+		n.textContent = "Los artículos vienen de una enciclopedia: explican el tema, pero no son instrucciones. " +
+			"No tomes ni des medicamentos ni dosis que aparezcan ahí sin indicación de un profesional.";
+		lista.before(n);
 	}
 	for (const x of r.resultados) {
 		const li = document.createElement("li");
@@ -81,9 +114,8 @@
 	mas.append("¿No es lo que buscabas? Prueba otras palabras o ", enlace, " (Wikipedia completa, libros, diccionario).");
 	mas.hidden = false;
 
-	fetch("/paises/" + ((await fetch("/config.json").then(x => x.json()).catch(() => ({}))).pais || "CL") + ".json")
-		.then(x => x.json()).then(p => { const t = (p.telefonos || [])[0]; if (t) { const f = document.getElementById("fono-salud"); f.textContent = t.numero; f.href = "tel:" + t.numero.replace(/\s/g, ""); } })
-		.catch(() => {});
+	const t = (datosPais.telefonos || [])[0];
+	if (t) { const f = document.getElementById("fono-salud"); f.textContent = t.numero; f.href = "tel:" + t.numero.replace(/\s/g, ""); }
 })();
 </script>
 </body>

@@ -4,10 +4,11 @@ Convierte un computador viejo (o una Raspberry Pi) en una **fuente de informaci�
 Cuando se corta internet, crea sola una **Wi-Fi abierta**: cualquier celular que se conecte ve una página
 con lo necesario para una emergencia, aunque no haya señal ni datos.
 
-- **Primeros auxilios paso a paso:** 40 fichas revisadas con fuentes oficiales (MINSAL, SAMU, CITUC, Cruz Roja…).
+- **Primeros auxilios paso a paso:** 40 fichas resumidas de fuentes oficiales (MINSAL, SAMU, CITUC, Cruz Roja…),
+  cada una con su fuente y fecha de revisión.
 - **Buscador que entiende cómo habla la gente:** "me picó una araña" o "se cortó y sangra mucho" llevan a la
   ficha correcta y a los artículos de medicina. Usa un modelo de IA pequeño que corre en el mismo equipo y no
-  inventa texto: solo encuentra y muestra.
+  inventa texto: solo encuentra y muestra. Si no encuentra algo claro, lo dice.
 - **Mapa sin internet** de tu zona, con calles, hospitales, bomberos, carabineros, farmacias y albergues.
 - **Documentos oficiales:** planos de evacuación por tsunami y volcán, y planes de emergencia de tu región.
 - **Biblioteca:** Wikipedia en español (completa o solo medicina), manuales, diccionario y guía de viaje,
@@ -27,7 +28,7 @@ en los celulares. Cuando internet vuelve y se mantiene estable, la Wi-Fi se apag
 | Memoria | 2 GB | 4 GB o más |
 | Disco | 3 GB (mapas, medicina, documentos) | 25 GB (con la Wikipedia completa) |
 | Software | Docker con Compose, Python 3, curl | |
-| Energía | | Un UPS para el equipo **y el router**: sin luz no hay nodo |
+| Energía | | Batería para el equipo (UPS, o power bank / 12 V en una Raspberry Pi): sin luz no hay nodo. El router no hace falta: la Wi-Fi de emergencia la crea el propio equipo |
 
 `./verificar.sh` revisa todo esto sin cambiar nada y dice cómo arreglar lo que falte.
 
@@ -53,6 +54,12 @@ para que lo completes; cada opción está explicada ahí.
 
 **Actualizar:** `git pull && ./instalar.sh`. Solo se baja lo que cambió.
 **Actualizar el mapa:** `./descargar.sh --actualizar-mapas`.
+**Desinstalar:** `./desinstalar.sh` quita el vigía, el firewall y la Wi-Fi de emergencia y deja la red como
+estaba (`--simular` muestra antes lo que haría). Lo descargado no se borra: te dice dónde está.
+
+**Dónde ponerlo:** la Wi-Fi alcanza decenas de metros. Rinde más en un lugar al que la gente llega en una
+emergencia (sede vecinal, escuela, cuartel de bomberos) que dentro de una casa. El cartel con QR (`/cartel`)
+avisa que la red existe; piensa bien dónde lo pegas.
 
 ## Cómo funciona
 
@@ -69,8 +76,8 @@ para que lo completes; cada opción está explicada ahí.
   (biblioteca) y el buscador (Python + ONNX, modelo multilingual-e5-small cuantizado).
 - `portal/`: la página. HTML, CSS y JavaScript simples, sin dependencias externas: todo se sirve desde el equipo.
 - `sistema/`: lo que necesita root. La Wi-Fi de NetworkManager en modo compartido, el DNS del portal cautivo,
-  el firewall que aísla la red abierta (los clientes no llegan a SSH, a la red de la casa ni a internet)
-  y el vigía (`systemd timer`).
+  el firewall que aísla la red abierta (los clientes no llegan a SSH, a la red de la casa ni a internet, ni
+  se ven entre sí) y el vigía (`systemd timer`). El portal no guarda registro de visitas ni de búsquedas.
 - `asistente/`: el asistente web de configuración (solo biblioteca estándar de Python).
 - `documentos/<PAÍS>.json`, `portal/paises/<PAÍS>.json`, `portal/fichas/<PAÍS>.json`: los datos de cada país.
 
@@ -98,10 +105,30 @@ Los puertos que deban verse desde la Wi-Fi de emergencia van en `PUERTOS_AP_EXTR
 Por ahora el proyecto incluye **Chile**: teléfonos, qué hacer, 40 fichas de primeros auxilios y documentos
 oficiales por región. Agregar otro país es agregar tres archivos JSON: ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Estado: qué está probado y qué no
+
+El proyecto es joven. Esto es lo que se ha probado de verdad y lo que falta:
+
+| Prueba | Estado |
+|---|---|
+| Corte de internet (cable del router desenchufado): la Wi-Fi aparece a los 2 min y se apaga al volver | ✅ Probado |
+| Celular Android se conecta y ve el portal | ✅ Probado |
+| Buscador: 29 preguntas reales con la ficha o el artículo correcto primero; preguntas sin relación avisan "no encontré" | ✅ Probado |
+| Instalación en un mini PC con Ubuntu | ✅ Probado |
+| Instalación desde cero en otro equipo y en Raspberry Pi 4/5 | ⏳ Pendiente |
+| Corte de **luz** real con batería: horas de autonomía y arranque automático | ⏳ Pendiente |
+| iPhone y varios Android; varios celulares a la vez | ⏳ Pendiente |
+| Personas que no conocen el proyecto encuentran una ficha y el mapa sin ayuda | ⏳ Pendiente |
+| Revisión de las fichas por un profesional de la salud | ⏳ Pendiente |
+
+Si pruebas alguna de las pendientes, cuéntalo en un issue: es la ayuda más valiosa.
+
 ## Importante
 
 Esta información orienta, **no reemplaza a un profesional de la salud ni a las instrucciones de la autoridad**.
-Las fichas resumen fuentes oficiales y cada una indica su fuente. Si encuentras un error, abre un issue.
+Las fichas resumen fuentes oficiales; cada una indica su fuente y quién la revisó y cuándo. Los artículos de la
+biblioteca (Wikipedia) explican, pero no son instrucciones y pueden mencionar medicamentos y dosis. El mapa no
+está en tiempo real. Si encuentras un error, abre un issue.
 
 ## Licencias
 

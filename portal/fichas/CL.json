@@ -1,4 +1,10 @@
 {
+ "revision": {
+  "fecha": "2026-11-17",
+  "por": "los autores del proyecto, comparando con las fuentes citadas",
+  "profesional": false
+ },
+ "sin_senal": "ve al centro de salud más cercano (SAPU, SAR, CESFAM u hospital), a un cuartel de Bomberos o a Carabineros. Están en el mapa. Si no puedes moverte, pide a alguien que vaya a buscar ayuda.",
  "fichas": [
   {
    "id": "arana-de-rincon",

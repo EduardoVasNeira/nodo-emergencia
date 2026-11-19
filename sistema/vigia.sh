@@ -60,7 +60,11 @@ encender() {
 }
 apagar() {
 	ap_activo && nmcli connection down "$CON" >/dev/null 2>&1
-	nmcli radio wifi off
+	# La radio se apaga solo si ninguna otra conexión Wi-Fi la usa (ej. un equipo que también
+	# navega por Wi-Fi): así no se corta la conexión del dueño.
+	if ! nmcli -t -f TYPE connection show --active | grep -qx 802-11-wireless; then
+		nmcli radio wifi off
+	fi
 }
 duracion() { # segundos -> "1 h 23 min"
 	local s=$1; printf '%d h %02d min' $((s / 3600)) $((s % 3600 / 60))

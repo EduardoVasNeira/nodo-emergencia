@@ -22,8 +22,9 @@ if [ -n "${LOG_FILE:-}" ] && [ ! -e "$LOG_FILE" ]; then
 	touch "$LOG_FILE"; [ -n "${SUDO_USER:-}" ] && chown "$SUDO_USER": "$LOG_FILE"
 fi
 
-# 2. Perfil de la Wi-Fi de emergencia (abierta, 2,4 GHz, sin autoconexión: la enciende el vigía)
-P=(802-11-wireless.mode ap 802-11-wireless.band bg
+# 2. Perfil de la Wi-Fi de emergencia (abierta, 2,4 GHz, sin autoconexión: la enciende el vigía).
+#    ap-isolation: los celulares conectados no se ven entre sí (solo al nodo).
+P=(802-11-wireless.mode ap 802-11-wireless.band bg 802-11-wireless.ap-isolation 1
    802-11-wireless.channel "${CANAL:-6}" ipv4.method shared ipv4.addresses "$IP_AP/24"
    ipv6.method disabled connection.autoconnect no connection.interface-name "$WIFI_IF")
 if nmcli -t -f NAME connection show | grep -qx emergencia-ap; then

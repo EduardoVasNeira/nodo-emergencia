@@ -12,6 +12,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from html.parser import HTMLParser
 
 import numpy as np
@@ -124,6 +125,13 @@ def articulos_zim(ruta, prefijos=()):
         yield e.title, f"/wiki/content/{libro}/{item.path}", trozos_de(x.parrafos)
 
 
+def slug(t):
+    """'Tsunami (zona costera)' -> 'tsunami-zona-costera' (igual que en emergencia.html)."""
+    t = unicodedata.normalize("NFD", t.lower())
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
 def guias_pais(pais):
     ruta = f"/portal/paises/{pais}.json"
     if not os.path.exists(ruta):
@@ -133,7 +141,7 @@ def guias_pais(pais):
     if tel:
         yield "Teléfonos de emergencia", "/emergencia", [("", "Números de emergencia: " + tel)]
     for s in g.get("situaciones", []):
-        yield s["titulo"], "/emergencia", trozos_de([("", p) for p in s.get("pasos", [])]) or []
+        yield s["titulo"], "/emergencia#" + slug(s["titulo"]), trozos_de([("", p) for p in s.get("pasos", [])]) or []
 
 
 def fichas_pais(pais):

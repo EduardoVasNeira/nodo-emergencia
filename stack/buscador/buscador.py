@@ -37,6 +37,11 @@ BONO_TITULO = float(os.environ.get("BONO_TITULO", "0.04"))
 BONO_SECCION = float(os.environ.get("BONO_SECCION", "0.03"))
 BONO_FICHA = float(os.environ.get("BONO_FICHA", "0.01"))
 MARGEN_FICHA = float(os.environ.get("MARGEN_FICHA", "0.013"))
+# Confianza (en la escala de "puntaje", parecido x 100 + bonos). Medido con preguntas reales y con
+# preguntas sin relación ("receta de empanadas", "hola"): las buenas dan 88 o más, las sin relación
+# menos de 87. Una ficha solo se muestra completa si es confiable; si nada lo es, se avisa.
+UMBRAL_FICHA = float(os.environ.get("UMBRAL_FICHA", "88"))
+UMBRAL_BAJO = float(os.environ.get("UMBRAL_BAJO", "87"))
 # Primeras palabras de títulos de fichas que no identifican el tema ("Niño que tomó cloro…").
 GENERICAS = {"nino", "persona", "signos", "dolor", "golpe", "crisis", "que", "como"}
 # Secciones que dicen qué hacer: se prefiere mostrar ese párrafo antes que la definición.
@@ -139,7 +144,8 @@ class Indice:
             self.por_titulo = {}
             for i, (t, u) in enumerate(self.docs):
                 variantes = {t, re.sub(r"\s*\(.*?\)", "", t), t.split(":")[0]}
-                if u.startswith("/ficha"):   # fichas: también lo del paréntesis y las primeras palabras
+                if u.startswith(("/ficha", "/emergencia#")):   # fichas y situaciones: también lo del
+                    # paréntesis y las primeras palabras ("Corte de luz prolongado" -> "corte de luz")
                     variantes |= set(re.findall(r"\((.*?)\)", t))
                     for parte in re.sub(r"\s*\(.*?\)", "", t).split(":"):
                         w = normalizar(parte).split()
@@ -205,8 +211,10 @@ class Indice:
 
         orden = sorted(cand, key=puntaje, reverse=True)
         # Si una ficha revisada queda casi empatada con el primero, va primero: dice qué hacer.
+        # Si además la ficha se llama como lo preguntado ("hipotermia"), el margen es el doble.
         fichas = [d for d in orden[:4] if self.docs[d][1].startswith("/ficha")]
-        if fichas and orden[0] != fichas[0] and puntaje(orden[0]) - puntaje(fichas[0]) <= MARGEN_FICHA:
+        margen = MARGEN_FICHA * (2 if fichas and "titulo" in cand[fichas[0]]["via"] else 1)
+        if fichas and orden[0] != fichas[0] and puntaje(orden[0]) - puntaje(fichas[0]) <= margen:
             orden.remove(fichas[0])
             orden.insert(0, fichas[0])
         salida = []
@@ -217,7 +225,17 @@ class Indice:
             salida.append({"titulo": titulo, "url": url, "seccion": sec, "fragmento": texto[:400],
                            "puntaje": round(puntaje(d) * 100, 1), "via": sorted(x["via"]),
                            "ficha": url.startswith("/ficha")})
-        return salida
+        # "alta": lo primero es una ficha o guía revisada y se puede mostrar completa.
+        # "baja": nada se parece de verdad a la pregunta. "media": artículos relacionados.
+        confianza = "media"
+        if salida:
+            p0 = salida[0]
+            fiable = p0["puntaje"] >= UMBRAL_FICHA or "titulo" in p0["via"]
+            if fiable and (p0["ficha"] or p0["url"].startswith("/emergencia#")):
+                confianza = "alta"
+            elif p0["puntaje"] < UMBRAL_BAJO and "titulo" not in p0["via"]:
+                confianza = "baja"
+        return {"resultados": salida, "confianza": confianza}
 
 
 indice = Indice()
@@ -253,7 +271,7 @@ class Manejador(BaseHTTPRequestHandler):
         r = indice.buscar(q, n)
         if r is None:
             return self._json(503, {"error": "el índice todavía no está listo"})
-        self._json(200, {"q": q, "resultados": r, "ms": round((time.time() - t0) * 1000)})
+        self._json(200, {"q": q, **r, "ms": round((time.time() - t0) * 1000)})
 
     def log_message(self, fmt, *args):
         pass

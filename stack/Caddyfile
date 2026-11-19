@@ -6,10 +6,8 @@
 # Portal: responde a cualquier nombre (portal cautivo: el DNS de la Wi-Fi de emergencia
 # apunta todo a esta IP).
 :80 {
-	log {
-		output stdout
-		format console
-	}
+	# Sin registro de visitas: las búsquedas ("me picó una araña") son datos de salud
+	# y la IP identifica el celular. Caddy no registra accesos si no hay "log".
 	encode gzip
 
 	# Detección de portal cautivo de Android, iOS y Windows: los mandamos al inicio.
